@@ -1,0 +1,125 @@
+soundfont: AegeanSymphonicOrchestra-v2_5-universal.sf2
+
+instruments:
+    :vl-i:
+        - bank: 40
+          preset: 40
+          pan: -0.6
+    :vl-ii:
+        - bank: 40
+          preset: 40
+          pan: -0.4
+    :vla:
+        - bank: 40
+          preset: 41
+          pan: -0.3
+    :vla-ii:
+        - bank: 40
+          preset: 41
+          pan: -0.1
+    :vlacb:
+        - bank: 40
+          preset: 41
+          pan: 0.1
+        - bank: 40
+          preset: 71
+          pan: 0.3
+          gain: +3
+    :vlc:
+        - bank: 40
+          preset: 42
+          pan: +0.5
+    :bvlc:
+        - bank: 40
+          preset: 42
+          pan: +0.5
+        - bank: 40
+          preset: 43
+          pan: +0.7
+          tsp: -12
+    :fl-i:
+        - bank: 40
+          preset: 73
+          pan: -0.1
+          gain: +6
+    :fl-ii:
+        - bank: 40
+          preset: 73
+          pan: +0.1
+          gain: +6
+    :cla-i:
+        - bank: 40
+          preset: 71
+          pan: -0.1
+          gain: +6
+    :cla-ii:
+        - bank: 40
+          preset: 71
+          pan: +0.1
+          gain: +6
+    :ob-i:
+        - bank: 40
+          preset: 68
+          pan: -0.1
+          gain: +6
+    :ob-ii:
+        - bank: 40
+          preset: 68
+          pan: +0.1
+          gain: +6
+
+    :tr-i:
+        - bank: 0
+          preset: 56
+          pan: +0.4
+          gain: +1
+        - bank: 40
+          preset: 56
+          pan: +0.4
+    :tr-ii:
+        - bank: 0
+          preset: 56
+          pan: +0.5
+          gain: +1
+        - bank: 40
+          preset: 56
+          pan: +0.5
+
+    :cor-i:
+        - bank: 0
+          preset: 60
+          pan: +0.2
+          gain: +5
+    :cor-ii:
+        - bank: 0
+          preset: 60
+          pan: +0.3
+          gain: +5
+
+    :tim:
+        - bank: 0
+          preset: 47
+          pan: +0.6
+          gain: +3
+          tsp: +12
+
+    :sop:
+        - bank: 41
+          preset: 52
+          pan: -0.4
+          gain: +6
+    :alt:
+        - bank: 41
+          preset: 52
+          pan: +0.4
+          gain: +6
+    :ten:
+        - bank: 42
+          preset: 52
+          pan: -0.5
+          gain: +6
+    :bas:
+        - bank: 42
+          preset: 52
+          pan: -0.5
+          gain: +6

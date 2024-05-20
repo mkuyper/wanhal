@@ -1,4 +1,5 @@
 *.swp
+.autosave.xopp
 **/lily/**/*.pdf
 **/lily/**/*.midi
 **/lily/**/*.mp3

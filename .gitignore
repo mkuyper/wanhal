@@ -1,3 +1,4 @@
+*.swp
 **/lily/**/*.pdf
 **/lily/**/*.midi
 **/lily/**/*.mp3

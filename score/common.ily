@@ -56,3 +56,4 @@ showbarno = {
 date = #(strftime "%d-%b-%Y" (localtime (current-time)))
 userName = #(passwd:name (getpw (getuid)))
 gitRevision = #(let* ((port (open-input-pipe "git rev-parse HEAD 2>/dev/null || echo n/a")) (str (read-line port))) (close-pipe port) str)
+gitDirty = #(let* ((port (open-input-pipe "test -n \"$(git status --porcelain)\" && echo '*' || echo ''")) (str (read-line port))) (close-pipe port) str)

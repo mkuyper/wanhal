@@ -48,17 +48,10 @@ movement = #(list-ref (last-pair (string-split (getcwd) #\-)) 0)
       \vcenter \epsfile #X #3 #"../../../score/assets/by.eps"
       \vcenter \smaller " License: https://creativecommons.org/licenses/by/4.0/"
     }
-    \line {
-      \concat {
-        \project
-        "      "
-        "Git Revision: "
-        \gitRevision
-        "      "
-        "Date: "
-        \date "/" \userName
-      }
-    }
+  }
+  composer = \markup \right-column {
+    \line { \fontsize #-2 \concat { \gitRevision \gitDirty "   " \date "/" \userName } }
+    \line { \bold \project }
   }
 }
 

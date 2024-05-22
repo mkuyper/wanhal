@@ -23,6 +23,9 @@ $(MOV).wav: $(MOV).midi $(FLUIDMAP)
 $(MOV).mp3: $(MOV).wav
 	lame $< $@
 
+$(MOV)-roll.png: $(SCOREDIR)/movement-roll.ly $(SRCS)
+	$(LILYPOND) $(LILYOPTS) -fpng -dresolution=50 -o $(basename $@) $<
+
 clean:
 	rm -f *.pdf *.midi *.mp3 *.wav
 

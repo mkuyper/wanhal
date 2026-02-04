@@ -1,0 +1,144 @@
+soundfont = "../3rd/midisynth-rs/example/aegean/AegeanSymphonicOrchestra-v2_5-universal.sf2"
+
+[[instr.":vl-i"]]
+bank = 40
+preset = 40
+pan = -0.6
+
+[[instr.":vl-ii"]]
+bank = 40
+preset = 40
+pan = -0.4
+
+[[instr.":vla"]]
+bank = 40
+preset = 41
+pan = -0.3
+
+[[instr.":vla-ii"]]
+bank = 40
+preset = 41
+pan = -0.1
+
+[[instr.":vlacb"]]
+bank = 40
+preset = 41
+pan = 0.1
+
+[[instr.":vlacb"]]
+bank = 40
+preset = 71
+pan = 0.3
+gain = 3
+
+[[instr.":vlc"]]
+bank = 40
+preset = 42
+pan = 0.5
+
+[[instr.":bvlc"]]
+bank = 40
+preset = 42
+pan = 0.5
+
+[[instr.":bvlc"]]
+bank = 40
+preset = 43
+pan = 0.7
+tsp = -12
+
+[[instr.":fl-i"]]
+bank = 40
+preset = 73
+pan = -0.1
+gain = 6
+
+[[instr.":fl-ii"]]
+bank = 40
+preset = 73
+pan = 0.1
+gain = 6
+
+[[instr.":cla-i"]]
+bank = 40
+preset = 71
+pan = -0.1
+gain = 6
+
+[[instr.":cla-ii"]]
+bank = 40
+preset = 71
+pan = 0.1
+gain = 6
+
+[[instr.":ob-i"]]
+bank = 40
+preset = 68
+pan = -0.1
+gain = 6
+
+[[instr.":ob-ii"]]
+bank = 40
+preset = 68
+pan = 0.1
+gain = 6
+
+[[instr.":tr-i"]]
+preset = 56
+pan = 0.4
+gain = 1
+
+[[instr.":tr-i"]]
+bank = 40
+preset = 56
+pan = 0.4
+
+[[instr.":tr-ii"]]
+preset = 56
+pan = 0.5
+gain = 1
+
+[[instr.":tr-ii"]]
+bank = 40
+preset = 56
+pan = 0.5
+
+[[instr.":cor-i"]]
+preset = 60
+pan = 0.2
+gain = 5
+
+[[instr.":cor-ii"]]
+preset = 60
+pan = 0.3
+gain = 5
+
+[[instr.":tim"]]
+preset = 47
+pan = 0.6
+gain = 3
+tsp = 12
+
+[[instr.":sop"]]
+bank = 41
+preset = 52
+pan = -0.4
+gain = 6
+
+[[instr.":alt"]]
+bank = 41
+preset = 52
+pan = 0.4
+gain = 6
+
+[[instr.":ten"]]
+bank = 42
+preset = 52
+pan = -0.5
+gain = 6
+
+[[instr.":bas"]]
+bank = 42
+preset = 52
+pan = 0.5
+gain = 6

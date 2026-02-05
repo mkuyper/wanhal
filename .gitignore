@@ -1,0 +1,7 @@
+*.swp
+**/manuscript/.*autosave.xopp
+**/manuscript/**/*.pdf
+**/lily/**/*.pdf
+**/lily/**/*.midi
+**/lily/**/*.mp3
+**/lily/**/*.wav

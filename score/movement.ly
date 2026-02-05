@@ -13,7 +13,18 @@
     \pad-markup #2 \line {
       \vcenter \epsfile #X #3 #"../../../score/assets/cc.eps"
       \vcenter \epsfile #X #3 #"../../../score/assets/by.eps"
-      \vcenter \smaller " License: https://creativecommons.org/licenses/by/4.0/"
+      \vcenter \sans \bold " CC BY 4.0"
+    }
+    \line {
+      \smaller "This work is licensed under a Creative Commons Attribution 4.0 License."
+    }
+    \line {
+      \smaller {
+        "To view a copy of this license, visit"
+        \with-url #"https://creativecommons.org/licenses/by/4.0/" {
+          "https://creativecommons.org/licenses/by/4.0/"
+        }
+      }
     }
   }
   composer = \markup \right-column {

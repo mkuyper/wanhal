@@ -1,0 +1,152 @@
+[ /Title (Missa in G (Nokki dubious 6 / Weinmann XIX:G6))
+  /Author (Johann Baptist Wanhal (attribution dubious))
+  /DOCINFO pdfmark
+
+[/Count 9 /Page 2 /View [/XYZ null null null] /Title (Organo) /OUT pdfmark
+[/Page 2 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 4 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 6 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 7 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 9 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 10 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 11 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 12 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 13 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 11 /Page 17 /View [/XYZ null null null] /Title (Soprano) /OUT pdfmark
+[/Page 17 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 18 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 19 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 20 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 21 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 22 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 23 /View [/XYZ null null null] /Title (8. Crucifixus) /OUT pdfmark
+[/Page 23 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 24 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 25 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 26 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 12 /Page 28 /View [/XYZ null null null] /Title (Violino I) /OUT pdfmark
+[/Page 28 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 31 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 33 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 35 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 37 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 38 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 39 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 40 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 42 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 43 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 44 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 45 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 11 /Page 47 /View [/XYZ null null null] /Title (Alto) /OUT pdfmark
+[/Page 47 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 49 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 50 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 51 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 52 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 52 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 53 /View [/XYZ null null null] /Title (8. Crucifixus) /OUT pdfmark
+[/Page 53 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 54 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 55 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 56 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 11 /Page 58 /View [/XYZ null null null] /Title (Tenore) /OUT pdfmark
+[/Page 58 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 59 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 60 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 61 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 62 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 63 /View [/XYZ null null null] /Title (8. Crucifixus) /OUT pdfmark
+[/Page 63 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 65 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 65 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 67 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 67 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 11 /Page 70 /View [/XYZ null null null] /Title (Basso) /OUT pdfmark
+[/Page 70 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 71 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 72 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 73 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 74 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 75 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 76 /View [/XYZ null null null] /Title (8. Crucifixus) /OUT pdfmark
+[/Page 76 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 77 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 77 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 78 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 12 /Page 80 /View [/XYZ null null null] /Title (Violino II) /OUT pdfmark
+[/Page 80 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 82 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 84 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 86 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 88 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 89 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 90 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 91 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 93 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 94 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 96 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 98 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 12 /Page 101 /View [/XYZ null null null] /Title (Viola) /OUT pdfmark
+[/Page 101 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 104 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 105 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 107 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 108 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 110 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 111 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 112 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 114 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 116 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 118 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 119 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 1 /Page 122 /View [/XYZ null null null] /Title (Viola II) /OUT pdfmark
+[/Page 122 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Count 12 /Page 123 /View [/XYZ null null null] /Title (Violoncello) /OUT pdfmark
+[/Page 123 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 125 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 127 /View [/XYZ null null null] /Title (3. Gratias) /OUT pdfmark
+[/Page 128 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 130 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 131 /View [/XYZ null null null] /Title (6. Credo) /OUT pdfmark
+[/Page 132 /View [/XYZ null null null] /Title (7. Et incarnatus) /OUT pdfmark
+[/Page 133 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 135 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 136 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 137 /View [/XYZ null null null] /Title (12. Agnus Dei) /OUT pdfmark
+[/Page 138 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 8 /Page 142 /View [/XYZ null null null] /Title (Oboe I) /OUT pdfmark
+[/Page 142 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 143 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 144 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 145 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 146 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 148 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 149 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 150 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 8 /Page 152 /View [/XYZ null null null] /Title (Oboe II) /OUT pdfmark
+[/Page 152 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 153 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 155 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 156 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 156 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 158 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 159 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 161 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 8 /Page 163 /View [/XYZ null null null] /Title (Corno I) /OUT pdfmark
+[/Page 163 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 171 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 165 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 166 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 166 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 167 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 168 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 169 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark
+[/Count 8 /Page 170 /View [/XYZ null null null] /Title (Corno II) /OUT pdfmark
+[/Page 170 /View [/XYZ null null null] /Title (1. Kyrie) /OUT pdfmark
+[/Page 164 /View [/XYZ null null null] /Title (2. Gloria) /OUT pdfmark
+[/Page 172 /View [/XYZ null null null] /Title (4. Quoniam) /OUT pdfmark
+[/Page 173 /View [/XYZ null null null] /Title (5. Cum sancto) /OUT pdfmark
+[/Page 173 /View [/XYZ null null null] /Title (9. Et resurrexit) /OUT pdfmark
+[/Page 174 /View [/XYZ null null null] /Title (10. Sanctus) /OUT pdfmark
+[/Page 175 /View [/XYZ null null null] /Title (11. Benedictus) /OUT pdfmark
+[/Page 176 /View [/XYZ null null null] /Title (13. Dona nobis) /OUT pdfmark

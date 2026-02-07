@@ -134,7 +134,7 @@ etresurrexit-vl-ii = \relative c' {
   R1
 
   %196
-  << g''4 \\ b, >> r << { g'8 g g4 } \\ { b,8 b b4 } >>
+  << gs''4 \\ b, >> r << { gs'8 gs gs4 } \\ { b,8 b b4 } >>
   
   %197
   << a'4 \\ cs, >> r << { a'8 a a4 } \\ { cs,8 cs cs4 } >>

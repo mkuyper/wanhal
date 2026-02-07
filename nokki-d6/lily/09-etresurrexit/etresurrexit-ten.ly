@@ -332,7 +332,7 @@ etresurrexit-ten-words = \lyricmode {
   pro -- ce -- dit. Qui __ cum __ Pa -- tre,
 
   %190
-  Pa -- tre et Fi -- li -- o si -- mul a -- do -- ra -- tur et
+  Pa -- tre __ et __ Fi -- li -- o si -- mul a -- do -- ra -- tur et
   con -- glo -- ri -- fi -- ca -- tur,
   qui lo -- cu -- tus est
 

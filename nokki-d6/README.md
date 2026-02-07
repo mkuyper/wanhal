@@ -36,7 +36,7 @@ _Andante_: 2/4, G major, 1-202 (202 bars)
 
 ### 2. Gloria
 
-_Adagio_: 4/4, D major, 1-5 (5 bars)
+_Adagio_: 4/4, D major, 1-5 (5 bars)  
 _Allegro_: 4/4, D major, 6-96 (91 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
@@ -61,7 +61,7 @@ _Allegro moderato_: 3/4, C major, 225-376 (152 bars)
 
 ### 5. Cum Sancto
 
-_Adagio_: 4/4, D major, 377-381 (5 bars)
+_Adagio_: 4/4, D major, 377-381 (5 bars)  
 _Allegro alla capella_: 4/4, D major, 382-467 (86 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
@@ -101,14 +101,14 @@ _Allegro assai_: 4/4, D major, 150-276 (127 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | -------- | ------- | --- | --- | ---
-| ⬜️⬜️    | ⬜️⬜️     | ⬜️⬜️⬜️⬜️ | ⬜️⬜️    | ⬜️  | ⬜️  | ⬜️
+| ⬜️⬜️    | ⬜️⬜️     | ✅⬜️⬜️⬜️ | ⬜️⬜️    | ⬜️  | ✅  | ⬜️
 
 
 ## Sanctus
 
 ### 10. Sanctus
 
-_Adagio_: 3/4, D major, 1-23 (23 bars)
+_Adagio_: 3/4, D major, 1-23 (23 bars)  
 _Allegro_: 4/4, D major, 24-73 (50 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org

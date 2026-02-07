@@ -16,10 +16,16 @@ callMovement = #(define-scheme-function
   (string?)
   (ly:parser-include-string (string-append "\\" movement "-" cmd)))
 
+filterPart= #(define-scheme-function
+  (parser location part)
+  (string?)
+  (let () (define p (getenv "PART"))
+    (if p (if (member part (string-split p #\:)) #t #f) #t)))
+
 hasPart = #(define-scheme-function
   (parser location part)
   (string?)
-  (defined? (comp-symbol movement "-" part)))
+  (and (defined? (comp-symbol movement "-" part)) (filterPart part)))
 
 evalIfDefined = #(define-scheme-function
   (parser location sym)

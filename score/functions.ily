@@ -20,7 +20,7 @@ filterPart= #(define-scheme-function
   (parser location part)
   (string?)
   (let () (define p (getenv "PART"))
-    (if p (if (member part (string-split p #\:)) #t #f) #t)))
+    (if p (if (member part (string-split p #\,)) #t #f) #t)))
 
 hasPart = #(define-scheme-function
   (parser location part)

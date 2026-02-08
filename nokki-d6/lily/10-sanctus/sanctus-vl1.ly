@@ -54,7 +54,7 @@ sanctus-vl-i = \relative c' {
   cs( b) b b b cs
 
   %16
-  cs( fs e d) cs b
+  d( fs e d) cs b
 
   %17
   b( a) \trem 4 a

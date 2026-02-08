@@ -286,7 +286,7 @@ donanobis-vl-i = \relative c'' {
   g8 d d d( e c)
 
   %179
-  \key d \minor % XXX remove me
+  % \key d \minor
   bf\f g' a bf a g
 
   %180
@@ -386,7 +386,7 @@ donanobis-vl-i = \relative c'' {
   fs fs( e) d d c
 
   %212
-  \key g \major % XXX remove me
+  %\key g \major
   b d' d d( e c)
 
   %213

@@ -374,7 +374,7 @@ donanobis-vl-i = \relative c'' {
   g8 d d ef4.
 
   %208
-  r8 ef? ef d4.
+  r8 ef ef d4.
 
   %209
   r8 d d r cs cs

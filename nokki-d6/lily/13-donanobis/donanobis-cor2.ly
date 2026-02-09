@@ -18,7 +18,7 @@ donanobis-cor-ii = \relative c' {
   R2.*3
 
   %101
-  r8 g' c e c g
+  r8 g' c d c g
 
   %102
   c r r r4 r8

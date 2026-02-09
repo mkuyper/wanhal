@@ -461,7 +461,7 @@ donanobis-sop = \relative c'' {
 
 donanobis-sop-words = \lyricmode {
   %83
-  Do -- na no -- bis pa -- cem, do -- na, do -- na no -- bis
+  Do -- na no -- bis pa -- cem, pa -- cem, do -- na no -- bis
 
   %87
   pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,

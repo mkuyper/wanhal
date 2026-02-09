@@ -460,4 +460,75 @@ donanobis-sop = \relative c'' {
 }
 
 donanobis-sop-words = \lyricmode {
+  %83
+  Do -- na no -- bis pa -- cem, do -- na, do -- na no -- bis
+
+  %87
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %93
+  pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem, pa --
+
+  %100
+  cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+  do -- na no -- bis
+
+  %108
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis
+
+  %117
+  pa -- cem, pa -- cem, do -- na no -- bis pa -- cem, pa -- cem, do -- na
+  
+  %127
+  no -- bis pa -- cem, pa -- cem, pa -- cem, do -- na no -- bis
+  
+  %137
+  pa -- cem, do -- na no -- bis pa -- cem.
+
+  %148
+  Do -- na no -- bis pa -- cem, pa -- cem, do -- na no -- bis pa -- cem,
+
+  %155
+  do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem, pa -- cem.
+
+  %161
+  Do -- na no -- bis pa -- cem, pa -- cem, pa -- cem,
+
+  %168
+  do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+  do -- na no -- bis pa --
+
+  %175
+  cem, do -- na no -- bis pa -- cem, do -- na no -- bis, no -- bis pa -- cem,
+  do -- na no -- bis
+
+  %184
+  do -- na no -- bis pa -- cem, do -- na no -- bis, do -- na no -- bis,
+
+  %192
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+  do -- na no -- bis
+
+  %200
+  pa -- cem, do -- na no -- bis, no -- bis pa -- cem, do -- na no -- bis,
+  do -- na no -- bis,
+
+  %209
+  pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem, do -- na no -- bis
+
+  %216
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %222
+  pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem, pa --
+
+  %229
+  cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+  do -- na no -- bis
+
+  %237
+  pa -- cem, do -- na no -- bis pa -- cem, pa -- cem, pa -- cem,
+
+  %244
+  pa -- cem, pa -- cem.
 }

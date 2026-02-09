@@ -148,7 +148,7 @@ donanobis-bas = \relative c {
   c4. g8 r r
 
   %164
-  a'[ g a] fs[ g a]
+  a'[ g] a fs[ g a]
 
   %165
   g r r r4 r8
@@ -336,4 +336,57 @@ donanobis-bas = \relative c {
 }
 
 donanobis-bas-words = \lyricmode {
+  %83
+  Pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem,
+
+  %98
+  do -- na no -- bis
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %106
+  pa -- cem, pa -- cem, do -- na no -- bis pa -- cem,
+
+  %118
+  pa -- cem, pa -- cem, do -- na no -- bis pa -- cem, pa -- cem,
+  do -- na no -- bis
+
+  %128
+  pa -- cem, pa -- cem, pa -- cem, do -- na no -- bis pa --
+
+  %138
+  cem, do -- na no -- bis pa -- cem.
+
+  %148
+  Pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem,
+  do -- na no -- bis
+
+  %165
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %172
+  pa -- cem, pa -- cem, do -- na no -- bis, no -- bis pa --
+
+  %183
+  cem, do -- na no -- bis, no -- bis pa -- cem, do -- na no -- bis,
+  do -- na no -- bis,
+
+  %193
+  do -- na no -- bis pa -- cem, do -- na
+
+  %197
+  no -- bis pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis,
+  no -- bis
+
+  %206
+  pa -- cem, do -- na no -- bis, no -- bis pa -- cem. Pa -- cem.
+
+  %224
+  Do -- na no -- bis pa -- cem, pa -- cem, pa -- cem, pa -- cem,
+  do -- na no -- bis
+
+  %232
+  pa -- cem, do -- na no -- bis pa -- cem, pa -- cem, pa -- cem,
+
+  %242
+  pa -- cem, pa -- cem, pa -- cem, pa -- cem.
 }

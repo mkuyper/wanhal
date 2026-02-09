@@ -348,4 +348,54 @@ donanobis-alt = \relative c'' {
 }
 
 donanobis-alt-words = \lyricmode {
+  %83
+  Pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem,
+
+  %98
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %106
+  pa -- cem, pa -- cem, do -- na no -- bis pa -- cem,
+
+  %118
+  pa -- cem, pa -- cem, do -- na no -- bis pa -- cem, pa -- cem,
+  do -- na no -- bis
+
+  %128
+  pa -- cem, pa -- cem, pa -- cem, do -- na no -- bis pa --
+
+  %138
+  cem, do -- na no -- bis pa -- cem.
+
+  %148
+  Pa -- cem. Do -- na no -- bis pa -- cem, pa -- cem,
+
+  %165
+  pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis pa -- cem,
+
+  %172
+  pa -- cem, pa -- cem, do -- na no -- bis, no -- bis pa --
+
+  %183
+  cem, do -- na no -- bis, no -- bis pa -- cem, do -- na no -- bis,
+  do -- na no -- bis
+
+  %191
+  pa -- cem, do -- na pa -- cem, do -- na
+
+  %197
+  no -- bis pa -- cem, do -- na no -- bis pa -- cem, do -- na no -- bis,
+  no -- bis
+
+  %206
+  pa -- cem, do -- na no -- bis, no -- bis pa -- cem. Pa -- cem.
+
+  %224
+  Do -- na no -- bis pa -- cem, pa -- cem, pa -- cem, do -- na no -- bis
+
+  %232
+  pa -- cem, do -- na no -- bis pa -- cem, pa -- cem, pa -- cem,
+
+  %242
+  pa -- cem, pa -- cem, pa -- cem, pa -- cem.
 }

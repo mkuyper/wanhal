@@ -81,16 +81,16 @@ donanobis-vl-ii = \relative c'' {
   \trem 6 g16 \trem 6 fs
 
   %112
-  g8\p b, b b c( b)
+  g8\p b, b b c( a)
 
   %113
-  g d' c c b a
+  g e' d c b a          % EDIT: score has d-c instead of e-d
 
   %114
   g b a b a g
 
   %115
-  b fs' fs fs g a
+  a fs' fs fs g a
 
   %116
   g d d d c b

@@ -138,7 +138,7 @@ donanobis-vl-ii = \relative c'' {
   << { cs' cs cs cs } { e, e e e } >> r r
 
   %133
-  << { e\p e e e4 } { a,8 a a a4 } >> r8
+  << { d\p d d d4 } { a8 a a a4 } >> r8
 
   %134
   b b b b4 r8

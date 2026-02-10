@@ -48,7 +48,7 @@ agnusdei-vl-i = \relative c' {
   a8 r r4
 
   %15-18
-  \rep 2 {
+  \rep 2 { % TODO -- expand to avoid repeating \p "piano"
     d,32(\p f) bf-. d-.
     c-. bf( a bf)
     d,32( f) bf-. d-.
@@ -161,7 +161,93 @@ agnusdei-vl-i = \relative c' {
   %51
   fs r r4
 
+  %52
+  d16 d( ef d) r bf' a g
 
+  %53
+  fs( a) cs,( d) r ef d c
 
+  %54
+  bf( d g bf) d bf( a g)
 
+  %55
+  a8 g d'16 d( g f)
+
+  %56
+  ef8 ef4 d8
+
+  %57
+  c16 c( fs a) g d( c bf)
+
+  %58
+  a8 r r4
+
+  %59-62
+  \rep 2 { % TODO -- expand to avoid repeating \p "piano"
+    d,32(\p f bf) d-.
+    c-. bf( a bf)
+    d,32( f bf) d-.
+    c bf a bf
+
+    a( c) c-. c-.
+    c( ef) ef-. ef-.
+    ef( d) c-. bf-.
+    a( g) f-. ef-.
+  }
+
+  %63
+  bf16\f bf''8 bf bf bf16~
+
+  %64
+  a8 g r4
+
+  %65
+  g,32(\p fs) a( g) fs8 r16 fs fs fs
+
+  %66
+  a32( g) ef'( d) d8 r16 d d d
+
+  %67
+  d( bf) g'-. d-. ef( d) c-. bf-.
+
+  %68
+  a8 r16 c bf( a) g-. fs-.
+
+  %69-70
+  \rep 2 {
+    g8 r16 c bf( a) g-. fs-.
+  }
+
+  %71
+  g( d) bf'-. g-. d'( bf) g'-. d,-.
+
+  %72
+  ef8 ef'( d) fs,
+
+  %73-75
+  \rep 3 {
+    g r16 c bf( a) g-. fs-.
+  }
+
+  %76
+  g( d) bf'-. g-. d' bf g' d,
+
+  %77
+  d8 ef'( d) fs,
+
+  %78
+  g2\f\fermata
+
+  %79
+  b16\p b b b b b b b
+
+  %80
+  c c c c ef ef ef ef
+
+  %81
+  d d d d c bf a g
+
+  %82
+  fs4 r
+  \bar "||"
 }

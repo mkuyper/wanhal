@@ -196,7 +196,7 @@ agnusdei-vl-i = \relative c' {
   }
 
   %63
-  bf16\f bf''8 bf bf bf16~
+  bf16\f bf''8 bf bf bf16
 
   %64
   a8 g r4

@@ -50,8 +50,16 @@ agnusdei-vl-i = \relative c' {
   %15-18
   \rep 2 {
     %15/17
+    d,32(\p f) bf-. d-.
+    c-. bf( a bf)
+    d,32( f) bf-. d-.
+    c-. bf( a bf)
 
     %16/18
+    a( c) c-. c-.
+    c( ef) ef-. ef-.
+    ef( d c) bf-.
+    a( g f) ef-.
   }
 
 

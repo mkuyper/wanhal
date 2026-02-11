@@ -8,6 +8,7 @@ sanctus-start = {
 
 pleni-start = {
   %\set Score.currentBarNumber = #24
+  \override Score.BarNumber.break-visibility = ##(#t #t #t)
   \time 4/4
   \tempo "Allegro" 4 = 130
 }

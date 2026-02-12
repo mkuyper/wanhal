@@ -1,14 +1,13 @@
 sanctus-piece = "10. Sanctus"
 
 sanctus-start = {
+  \override Score.BarNumber.break-visibility = ##(#t #t #t)
   \time 3/4
   \tempo "Adagio" 4 = 70
   \partial 8
 }
 
 pleni-start = {
-  %\set Score.currentBarNumber = #24
-  \override Score.BarNumber.break-visibility = ##(#t #t #t)
   \time 4/4
   \tempo "Allegro" 4 = 130
 }

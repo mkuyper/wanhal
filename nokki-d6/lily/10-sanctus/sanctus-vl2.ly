@@ -97,7 +97,7 @@ sanctus-vl-ii = \relative c' {
   g2( fs8) a a a
 
   %32
-  g2 g8( fs e fs)
+  a2 g8( fs e fs)
 
   %33
   fs2( g4) r

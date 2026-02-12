@@ -1,7 +1,6 @@
 sanctus-piece = "10. Sanctus"
 
 sanctus-start = {
-  \override Score.BarNumber.break-visibility = ##(#t #t #t)
   \time 3/4
   \tempo "Adagio" 4 = 70
   \partial 8

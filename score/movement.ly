@@ -38,7 +38,7 @@
 \score {
   \movementMusic
   \header {
-    piece = \markup { \fontsize #3 \callMovement "piece" }
+    piece = \markup { \fontsize #3 { \callMovement "piece" } }
   }
   \layout {
     indent = 4.0\cm

@@ -11,7 +11,7 @@ else
 	RUN_MIDISYNTH = $(error "$(MIDISYNTH)" is not executable or does not exist.)
 endif
 
-MOV ?= $(lastword $(subst -, ,$(notdir $(PWD))))
+MOV ?= $(lastword $(subst -, ,$(notdir $(CURDIR))))
 
 SRCS += $(wildcard *.ly)
 SRCS += $(SCOREDIR)/common.ily

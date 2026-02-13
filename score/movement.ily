@@ -1,77 +1,84 @@
-\include "../../../score/common.ily"
-\include "../../../score/functions.ily"
-\include "../project.ily"
+\include "functions.ily"
 
-movement = #(list-ref (last-pair (string-split (getcwd) #\-)) 0)
+includeMovement = #(define-scheme-function
+  (parser location movdir)
+  (string?)
 
-\includePart "common"
+  (score:part-include movdir "fl1")
+  (score:part-include movdir "fl2")
 
-\includePart "fl1"
-\includePart "fl2"
+  (score:part-include movdir "cla1")
+  (score:part-include movdir "cla2")
 
-\includePart "cla1"
-\includePart "cla2"
+  (score:part-include movdir "ob1")
+  (score:part-include movdir "ob2")
 
-\includePart "ob1"
-\includePart "ob2"
+  (score:part-include movdir "cor1")
+  (score:part-include movdir "cor2")
 
-\includePart "cor1"
-\includePart "cor2"
+  (score:part-include movdir "tr1")
+  (score:part-include movdir "tr2")
+  (score:part-include movdir "tim")
 
-\includePart "tr1"
-\includePart "tr2"
-\includePart "tim"
+  (score:part-include movdir "sop")
+  (score:part-include movdir "alt")
+  (score:part-include movdir "ten")
+  (score:part-include movdir "bas")
 
-\includePart "sop"
-\includePart "alt"
-\includePart "ten"
-\includePart "bas"
+  (score:part-include movdir "vl1")
+  (score:part-include movdir "vl2")
+  (score:part-include movdir "vla")
+  (score:part-include movdir "vlc")
+  (score:part-include movdir "bvlc")
 
-\includePart "vl1"
-\includePart "vl2"
-\includePart "vla"
-\includePart "vlc"
-\includePart "bvlc"
+  ; Note: multiple calls from the same function to ly:parser-include-string are
+  ; processed in reverse, so we need to include "common" at the end here.
+  (score:part-include movdir "common"))
 
-movementMusic = {
-  <<
-    \new StaffGroup <<
-      \pstaff "fl-i" "Flauto I" "Fl I" "flute"
-      \pstaff "fl-ii" "Flauto II" "Fl II" "flute"
-    >>
-    \new StaffGroup <<
-      \pstaff "cla-i" "Clarinetto I" "Cl I" "clarinet"
-      \pstaff "cla-ii" "Clarinetto II" "Cl II" "clarinet"
-    >>
-    \new StaffGroup <<
-      \pstaff "ob-i" "Oboe I" "Ob I" "oboe"
-      \pstaff "ob-ii" "Oboe II" "Ob II" "oboe"
-    >>
-    \new StaffGroup <<
-      \pstaff "cor-i" "Corno I" "Cor I" "french horn"
-      \pstaff "cor-ii" "Corno II" "Cor II" "french horn"
-    >>
-    \new StaffGroup <<
-      \pstaff "tr-i" "Tromba I" "Tr I" "trumpet"
-      \pstaff "tr-ii" "Tromba II" "Tr II" "trumpet"
-    >>
-    \pstaff "tim" "Timpani" "Timp" "timpani"
-    \new ChoirStaff <<
-      \pstaff "sop" "Soprano" "S" "choir aahs"
-      \plyrics "sop"
-      \pstaff "alt" "Alto" "A" "choir aahs"
-      \plyrics "alt"
-      \pstaff "ten" "Tenore" "T" "choir aahs"
-      \plyrics "ten"
-      \pstaff "bas" "Basso" "B" "choir aahs"
-      \plyrics "bas"
-    >>
-    \new StaffGroup \with { \consists "Metronome_mark_engraver" } <<
-      \pstaff "vl-i" "Violino I" "Vl I" "violin"
-      \pstaff "vl-ii" "Violino II" "Vl II" "violin"
-      \pstaff "vla" "Viola" "Vla" "viola"
-      \pstaff "vlc" "Violoncello" "Vlc" "cello"
-      \pstaff "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass"
-    >>
-  >>
-}
+movementMusic = #(define-scheme-function
+  (parser location movid)
+  (string?) #{
+    {<<
+      \new StaffGroup <<
+        #(score:part-staff movid "fl-i" "Flauto I" "Fl I" "flute")
+        #(score:part-staff movid "fl-ii" "Flauto II" "Fl II" "flute")
+      >>
+      \new StaffGroup <<
+        #(score:part-staff movid "cla-i" "Clarinetto I" "Cl I" "clarinet")
+        #(score:part-staff movid "cla-ii" "Clarinetto II" "Cl II" "clarinet")
+      >>
+      \new StaffGroup <<
+        #(score:part-staff movid "ob-i" "Oboe I" "Ob I" "oboe")
+        #(score:part-staff movid "ob-ii" "Oboe II" "Ob II" "oboe")
+      >>
+      \new StaffGroup <<
+        #(score:part-staff movid "cor-i" "Corno I" "Cor I" "french horn")
+        #(score:part-staff movid "cor-ii" "Corno II" "Cor II" "french horn")
+      >>
+      \new StaffGroup <<
+        #(score:part-staff movid "tr-i" "Tromba I" "Tr I" "trumpet")
+        #(score:part-staff movid "tr-ii" "Tromba II" "Tr II" "trumpet")
+      >>
+      #(score:part-staff movid "tim" "Timpani" "Timp" "timpani")
+      \new ChoirStaff <<
+        #(score:part-staff movid "sop" "Soprano" "S" "choir aahs")
+        #(score:part-lyrics movid "sop")
+
+        #(score:part-staff movid "alt" "Alto" "A" "choir aahs")
+        #(score:part-lyrics movid "alt")
+
+        #(score:part-staff movid "ten" "Tenore" "T" "choir aahs")
+        #(score:part-lyrics movid "ten")
+
+        #(score:part-staff movid "bas" "Basso" "B" "choir aahs")
+        #(score:part-lyrics movid "bas")
+      >>
+      \new StaffGroup \with { \consists "Metronome_mark_engraver" } <<
+        #(score:part-staff movid "vl-i" "Violino I" "Vl I" "violin")
+        #(score:part-staff movid "vl-ii" "Violino II" "Vl II" "violin")
+        #(score:part-staff movid "vla" "Viola" "Vla" "viola")
+        #(score:part-staff movid "vlc" "Violoncello" "Vlc" "cello")
+        #(score:part-staff movid "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass")
+      >>
+    >>}
+  #})

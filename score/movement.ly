@@ -1,6 +1,15 @@
 \version "2.24.1"
 
 \include "movement.ily"
+\include "common.ily"
+
+\include "../project.ily"
+
+#(define score:topdir "..")
+#(define movement:dir (basename (getcwd)))
+#(define movement:id (score:mov-id movement:dir))
+
+\includeMovement #movement:dir
 
 \paper {
   system-separator-markup = \slashSeparator
@@ -36,9 +45,10 @@
 #(set-global-staff-size 15)
 
 \score {
-  \movementMusic
+  \movementMusic #movement:id
+
   \header {
-    piece = \markup { \fontsize #3 { \callMovement "piece" } }
+    piece = \markup { \fontsize #3 { #(score:call movement:id "piece") } }
   }
   \layout {
     indent = 4.0\cm
@@ -49,8 +59,7 @@
   }
 }
 \score {
-  \unfoldRepeats
-  \movementMusic
+  \unfoldRepeats \movementMusic #movement:id
   \midi {
     \context {
       \Score midiChannelMapping = #'staff

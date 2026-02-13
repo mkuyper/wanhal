@@ -16,6 +16,7 @@ MOV ?= $(lastword $(subst -, ,$(notdir $(CURDIR))))
 SRCS += $(wildcard *.ly)
 SRCS += $(SCOREDIR)/common.ily
 SRCS += $(SCOREDIR)/functions.ily
+SRCS += $(SCOREDIR)/movement.ily
 
 LILYOPTS += -dno-point-and-click
 

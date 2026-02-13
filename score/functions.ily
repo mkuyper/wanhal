@@ -1,73 +1,67 @@
-#(define (comp-symbol . args) (string->symbol (apply string-append args)))
+#(define (score:symbol . args)
+   (string->symbol (apply string-append args)))
 
-includeIfExists = #(define-scheme-function
-  (parser location file)
-  (string?)
+#(define (score:eval-if-defined sym)
+   (if (defined? sym) (ly:parser-lookup sym)))
+
+#(define (score:include-if-exists file)
   (if (file-exists? file)
     (ly:parser-include-string (string-append "\\include \"" file "\""))))
 
-includePart = #(define-scheme-function
-  (parser location part)
-  (string?)
-  (includeIfExists (string-append movement "-" part ".ly")))
+#(define (score:mov-id movdir)
+   (list-ref (last-pair (string-split movdir #\-)) 0))
 
-callMovement = #(define-scheme-function
-  (parser location cmd)
-  (string?)
-  (ly:parser-include-string (string-append "\\" movement "-" cmd)))
+#(define (score:part-file movdir part)
+   (string-append score:topdir "/" movdir "/" (score:mov-id movdir) "-" part ".ly"))
 
-filterPart= #(define-scheme-function
-  (parser location part)
-  (string?)
-  (let () (define p (getenv "PART"))
-    (if p (if (member part (string-split p #\,)) #t #f) #t)))
+#(define (score:part-include movdir part)
+   (score:include-if-exists (score:part-file movdir part)))
 
-hasPart = #(define-scheme-function
-  (parser location part)
-  (string?)
-  (and (defined? (comp-symbol movement "-" part)) (filterPart part)))
+#(define (score:call . args)
+   (ly:parser-include-string (string-append "\\" (string-join args "-"))))
 
-evalIfDefined = #(define-scheme-function
-  (parser location sym)
-  (symbol?)
-  (if (defined? sym) (ly:parser-lookup sym)))
+#(define (score:part-filtered part)
+   (let () (define p (getenv "PART"))
+     (if p (if (member part (string-split p #\,)) #t #f) #t)))
 
-transposedKey = #(define-scheme-function
-  (parser location part)
-  (string?)
-  (evalIfDefined (comp-symbol movement "-" part "-key")))
+#(define (score:part-exists movid part)
+   (defined? (score:symbol movid "-" part)))
 
-transposedName = #(define-scheme-function
-  (parser location part name)
-  (string? string?)
-  (string-join (filter string? (list name (transposedKey part))) " in "))
+#(define (score:part-enabled movid part)
+   (and (score:part-exists movid part) (score:part-filtered part)))
 
+#(define (score:part-transposed-key movid part)
+   (score:eval-if-defined (score:symbol movid "-" part "-key")))
 
-% Part staff
-pstaff = #(define-scheme-function
-  (parser location part iname siname miname)
-  (string? string? string? string?) (if (hasPart part) #{
-    \new Staff \with {
-      instrumentName = \transposedName #part #iname
-      shortInstrumentName = #siname
-      midiInstrument = #miname
-    } {
-      \override Staff.InstrumentName.self-alignment-X = #RIGHT
-      \new Voice = #part {
-        \callMovement #part
+#(define (score:part-transposed-name movid part name)
+   (string-join
+     (filter string? (list name (score:part-transposed-key movid part)))
+     " in "))
+
+#(define (score:part-staff movid part iname siname miname)
+   (if (score:part-enabled movid part) #{
+      \new Staff \with {
+        instrumentName = #(score:part-transposed-name movid part iname)
+        shortInstrumentName = #siname
+        midiInstrument = #miname
+      } {
+        \override Staff.InstrumentName.self-alignment-X = #RIGHT
+        \new Voice = #part {
+          #(score:call movid part)
+        }
       }
-    }
-  #}))
+   #}))
 
-% Part lyrics
-plyrics = #(define-scheme-function
-  (parser location part)
-  (string?) (if (hasPart part) #{
-    \new Lyrics \lyricsto #part {
-      \callMovement #(string-append part "-words")
-    }
-  #}))
+#(define (score:part-lyrics movid part)
+   (if (score:part-enabled movid part) #{
+      \new Lyrics \lyricsto #part {
+        #(score:call movid part "words")
+      }
+   #}))
 
+
+% -----------------------------------------------------------------------------
+% Build-related functions (to be separated out?)
 
 #(use-modules (ice-9 popen))
 #(use-modules (ice-9 rdelim))

@@ -3,11 +3,8 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: codello/lilypond:stable
     steps:
-      - name: Install LilyPond
-        run: |
-          sudo apt update
-          sudo apt -y install lilypond
       - name: Check out repository
         uses: actions/checkout@v5
       - name: Typeset music

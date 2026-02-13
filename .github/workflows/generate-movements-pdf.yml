@@ -12,7 +12,7 @@ jobs:
         run: |
           for w in nokki-d4 nokki-d6; do
             for m in $w/lily/??-*; do
-              make -C $m
+              BUILD_TAG="${GITHUB_SHA}" BUILD_USER="${GITHUB_ACTOR}" make -C $m
             done
           done
       - name: Archive PDF files

@@ -28,7 +28,7 @@
     }
   }
   composer = \markup \right-column {
-    \line { \fontsize #-2 \concat { \gitRevision \gitDirty "   " \date "/" \userName } }
+    \line { \fontsize #-2 \concat { \buildTag "   " \buildDate "/" \buildUser } }
     \line { \bold \project }
   }
 }

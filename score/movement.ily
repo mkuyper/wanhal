@@ -1,4 +1,4 @@
-\include "functions.ily"
+\include "score.ily"
 
 includeMovement = #(define-scheme-function
   (parser location movdir)

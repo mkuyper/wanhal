@@ -58,22 +58,3 @@
         #(score:call movid part "words")
       }
    #}))
-
-
-% -----------------------------------------------------------------------------
-% Build-related functions (to be separated out?)
-
-#(use-modules (ice-9 popen))
-#(use-modules (ice-9 rdelim))
-
-#(define (user-name) (passwd:name (getpw (getuid))))
-#(define (git-revision)
-   (let* ((port (open-input-pipe "git rev-parse HEAD 2>/dev/null || echo n/a"))
-          (str (read-line port))) (close-pipe port) str))
-#(define (git-dirty)
-   (let* ((port (open-input-pipe "test -n \"$(git status --porcelain)\" && echo '*' || echo ''"))
-          (str (read-line port))) (close-pipe port) str))
-
-buildDate = #(strftime "%d-%b-%Y" (localtime (current-time)))
-buildUser = #(or (getenv "BUILD_USER") (user-name))
-buildTag = #(or (getenv "BUILD_TAG") (string-append (git-revision) (git-dirty)))

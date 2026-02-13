@@ -1,7 +1,8 @@
 \version "2.24.1"
 
-\include "movement.ily"
+\include "build.ily"
 \include "common.ily"
+\include "movement.ily"
 
 \include "../project.ily"
 

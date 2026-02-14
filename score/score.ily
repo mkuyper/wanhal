@@ -1,3 +1,6 @@
+#(use-modules (ice-9 ftw))
+#(use-modules (ice-9 regex))
+
 #(define (score:symbol . args)
    (string->symbol (apply string-append args)))
 
@@ -5,11 +8,21 @@
    (if (defined? sym) (ly:parser-lookup sym)))
 
 #(define (score:include-if-exists file)
-  (if (file-exists? file)
-    (ly:parser-include-string (string-append "\\include \"" file "\""))))
+   (if (file-exists? file)
+     (ly:parser-include-string (string-append "\\include \"" file "\""))))
+
+#(define (score:asset file)
+   (string-append score:topdir "/../../score/assets/" file))
+
+#(define (score:toplevel-add score)
+   (ly:parser-define! 'toplevel-scores
+   (cons score (ly:parser-lookup 'toplevel-scores))))
 
 #(define (score:mov-id movdir)
    (list-ref (last-pair (string-split movdir #\-)) 0))
+
+#(define (score:mov-getdirs)
+   (scandir score:topdir (lambda (fn) (string-match "^[0-9][0-9]-.*" fn))))
 
 #(define (score:part-file movdir part)
    (string-append score:topdir "/" movdir "/" (score:mov-id movdir) "-" part ".ly"))

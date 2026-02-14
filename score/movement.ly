@@ -1,16 +1,17 @@
 \version "2.24.1"
 
+#(define score:topdir "..")
+
 \include "build.ily"
 \include "common.ily"
 \include "movement.ily"
 
 \include "../project.ily"
 
-#(define score:topdir "..")
 #(define movement:dir (basename (getcwd)))
 #(define movement:id (score:mov-id movement:dir))
 
-\includeMovement #movement:dir
+#(movement:include movement:dir)
 
 \paper {
   system-separator-markup = \slashSeparator
@@ -19,28 +20,12 @@
 }
 
 \header {
-  copyright = \markup \center-column {
-    \pad-markup #2 \line {
-      \vcenter \epsfile #X #3 #"../../../score/assets/cc.eps"
-      \vcenter \epsfile #X #3 #"../../../score/assets/by.eps"
-      \vcenter \sans \bold " CC BY 4.0"
-    }
-    \line {
-      \smaller "This work is licensed under a Creative Commons Attribution 4.0 License."
-    }
-    \line {
-      \smaller {
-        "To view a copy of this license, visit"
-        \with-url #"https://creativecommons.org/licenses/by/4.0/" {
-          "https://creativecommons.org/licenses/by/4.0/"
-        }
-      }
-    }
-  }
   composer = \markup \right-column {
     \line { \fontsize #-2 \concat { \buildTag "   " \buildDate "/" \buildUser } }
     \line { \bold \project }
   }
+
+  copyright = \copyright-cc-by
 }
 
 #(set-global-staff-size 15)

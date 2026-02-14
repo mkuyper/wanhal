@@ -1,4 +1,4 @@
-name: Generate Movement PDF Files
+name: Generate Movement/Work PDF Files
 on: [push]
 jobs:
   build:
@@ -11,6 +11,7 @@ jobs:
         shell: bash
         run: |
           for w in nokki-d4 nokki-d6; do
+            make -C $w/lily
             for m in $w/lily/??-*; do
               BUILD_TAG="${GITHUB_SHA}" BUILD_USER="${GITHUB_ACTOR}" make -C $m
             done
@@ -18,5 +19,5 @@ jobs:
       - name: Archive PDF files
         uses: actions/upload-artifact@v4
         with:
-          name: movements-pdf
-          path: "*/lily/*/*.pdf"
+          name: score-pdf
+          path: "**/*.pdf"

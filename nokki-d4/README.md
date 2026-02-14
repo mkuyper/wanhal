@@ -111,7 +111,7 @@ _Largo_: 3/4, D minor, 84-169 (86 bars)
 
 | Cor I/II | A   | Vl I/II | Vla I/II/III  | Vlc/Cb | Org
 | -------- | --- | ------- | ------------- | -------| ---
-| ⬜️⬜️     | ⬜️  | ⬜️⬜️    | ⬜️⬜️⬜️        | ⬜️     | ⬜️
+| ✅✅     | ✅  | ✅✅    | ✅✅✅        | ✅     | ⬜️
 
 This movement contains 3 Viola parts marked _Viola I Solo_, _Alto Viola II
 oblig._, and _Viola con Corni di Bassetti_.

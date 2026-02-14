@@ -28,6 +28,9 @@
   (score:part-include movdir "vlc")
   (score:part-include movdir "bvlc")
 
+  (score:part-include movdir "vla2")
+  (score:part-include movdir "vlacb")
+
   ; Note: multiple calls from the same function to ly:parser-include-string are
   ; processed in reverse, so we need to include "common" at the end here.
   (score:part-include movdir "common"))
@@ -74,6 +77,8 @@ movementMusic = #(define-scheme-function
         #(score:part-staff movid "vl-i" "Violino I" "Vl I" "violin")
         #(score:part-staff movid "vl-ii" "Violino II" "Vl II" "violin")
         #(score:part-staff movid "vla" "Viola" "Vla" "viola")
+        #(score:part-staff movid "vla-ii" "Viola II" "Vla II" "viola")
+        #(score:part-staff movid "vlacb" "Viola III" "Vla III" "viola")
         #(score:part-staff movid "vlc" "Violoncello" "Vlc" "cello")
         #(score:part-staff movid "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass")
       >>

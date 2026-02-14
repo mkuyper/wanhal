@@ -4,7 +4,6 @@ cumsancto-start = {
   \set Score.currentBarNumber = #658
   \time 4/4
   \tempo "Adagio" 4 = 50
-  \bar ""
 }
 
 cumsancto-ingloria = {

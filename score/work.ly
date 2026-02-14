@@ -40,9 +40,25 @@
 
   composer = \workComposer
 
-  arranger = \markup \fontsize #-2 \right-column {
-    \line { \buildTag }
-    \line { \concat { \buildDate "/" \buildUser } }
+  arranger = \markup {
+    \vspace #2
+    \box {
+      \override #'(baseline-skip . 2.5)
+      \pad-markup #0.5 \sans \fontsize #-2 \left-column {
+        \line {
+          \vcenter \pad-markup #1 { \epsfile #X #3.5 #(score:asset "invertocat.eps") }
+          \vcenter \left-column {
+            "This project is hosted on GitHub:"
+            \with-url #"https://github.com/mkuyper/wanhal" {
+              "github.com/mkuyper/wanhal"
+            }
+          }
+        }
+        \vspace #0.2
+        \buildTag
+        \concat { \buildDate "/" \buildUser }
+      }
+    }
   }
 
   copyright = \copyright-cc-by

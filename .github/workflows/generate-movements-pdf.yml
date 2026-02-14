@@ -11,7 +11,7 @@ jobs:
         shell: bash
         run: |
           for w in nokki-d4 nokki-d6; do
-            make -C $w/lily
+            BUILD_TAG="${GITHUB_SHA}" BUILD_USER="${GITHUB_ACTOR}" make -C $w/lily
             for m in $w/lily/??-*; do
               BUILD_TAG="${GITHUB_SHA}" BUILD_USER="${GITHUB_ACTOR}" make -C $m
             done

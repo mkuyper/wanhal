@@ -142,3 +142,7 @@ bank = 42
 preset = 52
 pan = 0.5
 gain = 6
+
+[[instr.":org"]]
+bank = 7
+preset = 19

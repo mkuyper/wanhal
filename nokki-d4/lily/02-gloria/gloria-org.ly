@@ -72,7 +72,7 @@ gloria-org = \relative c {
   d a8[ fs] d4 r
 
   %23
-  r2^\senzaorg d\p
+  r2^\ann "Senza Org." d\p
 
   %24
   d' d,
@@ -150,7 +150,7 @@ gloria-org = \relative c {
   a2 r4-\fermata a'4\ff
 }
 
-gloria-org-fig = \figures {
+gloria-org-fig = \figuremode {
   \bassFigureExtendersOn
 
   %1-6
@@ -217,7 +217,7 @@ gloria-org-fig = \figures {
   <5 3> <5\! 3\!>
 
   %35
-  <5\! \markup { ? } > s
+  <\taV > s
 
   %36
   <6>8 <6> <6> <6> s2

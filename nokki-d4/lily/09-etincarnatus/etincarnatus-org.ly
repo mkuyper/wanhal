@@ -200,7 +200,7 @@ etincarnatus-org = \relative c {
   \bar "||"
 }
 
-etincarnatus-org-fig = \figures {
+etincarnatus-org-fig = \figuremode {
   \bassFigureExtendersOn
 
   %84
@@ -300,7 +300,7 @@ etincarnatus-org-fig = \figures {
   <8>2 s4
 
   %131
-  <_+> s <\markup { ⁀ } 5>
+  <_+> s <\taV>
 
   %132
   <_->4 s2
@@ -327,7 +327,7 @@ etincarnatus-org-fig = \figures {
   <8>8 s s2
 
   %140
-  s2 <\markup { ⁀ } 5>4
+  s2 <\taV>4
 
   %141
   <3> <5> <5>
@@ -351,7 +351,7 @@ etincarnatus-org-fig = \figures {
   s2.
 
   %153
-  s2 <\markup { ⁀ } 5>4
+  s2 <\taV>4
 
   %154
   \rep 4 <_+>8 s4

@@ -24,7 +24,7 @@ cumsancto-org = \relative c {
   \amen-start
 }
 
-cumsancto-org-fig = \figures {
+cumsancto-org-fig = \figuremode {
   \bassFigureExtendersOn
 
   %377-382

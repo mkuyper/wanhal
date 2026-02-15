@@ -1,7 +1,7 @@
 [![LilyPond](https://img.shields.io/badge/LilyPond-..._music_notation_for_everyone-blue.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48cGF0aCBkPSJtMTc1IDMzMCA5IDVjMTIgMzUgMzAgNDcgNDUgNTEgMTIgMTkgMjUgMzYgNDAgNTEtMjAgMjgtNDggMzgtNTUgNDAtMzAtMjItNDQtNzEtMzktMTQ3em0yMTIgMjdjNDUtMTAgODYtMzIgMTI1LTY2LTI2LTIwLTU2LTMzLTkyLTQwLTggMTItMTcgMjQtMjcgMzUgMzEgMTMgNDAgMzgtMTQgNTZsOCAxNXptLTc2LTI1MWMxNSAyMiAyMCA0OSAxNyA4MCAyMi0xMCA0Mi0xNyA2Mi0yMCAxMC02Ny05LTExOC05LTExOC0yOSAxNS01MiAzNC03MCA1OHpNMTY5IDMyNmMtMzItMjAtNTUtNDctNjktODAtMzggMTMtNjkgMzUtNzkgNDIgNDkgNDUgOTggNzAgMTQ3IDc3bDEtMzl6bTI4NyAxMmMtMjIgMTEtNDQgMTktNjYgMjRsMjAgNDNjNDktMiA3OC0xNiAxMDItNDQtNS03LTMwLTExLTU2LTIzek04NSAxODVsMTEtNGMtMjEtMTQtNTItMjQtOTUtMTQtNiAxMSAyNyA1NCA1OCA5MSAxMi02IDI1LTEyIDM5LTE3LTYtMTgtMTAtMzYtMTMtNTZ6bTgzIDE4NmMtMzAtNC01OS0xNS04OS0zMi0zMSAyNC03NCA2Mi03NiA5MyAzOCAyNCAxMTIgOSAxNzItOS00LTE1LTYtMzItNy01MnpNMjc5IDcyYzExIDcgMjIgMTkgMjkgMjkgNS04IDExLTE0IDE3LTIwbC0yNS01NmMtNS05LTE1LTctMjIgMS0yMSAyOS0zOCA1OS01MCA5Mmw2IDExYzctMjQgMjMtNDQgNDUtNTd6TTE0NSAxODFjLTE1LTM1LTgtNzEgMi0xMDItMTEtOC0yMy0xNS0zMy0xNi0yNSAxMi0xMSA3MCA0IDExNCA5LTEgMTggMCAyNyA0em0yNzkgNjUgMjAgNWMzMi0zNiA1Mi03MiA2NC0xMTAtMjcgMC02NSAxLTExMSAyMGwtMSA0YzIxLTMgNDEtMSA1OCA0LTYgMjgtMTYgNTQtMzAgNzd6TTI5NCAzNTZjLTQzIDQzLTg3IDMyLTEwNS0yNS02MS0zMi05MC04MS05Ny0xNDMgMzMtMTIgNTYtNSA3MiAxNC0yOC0zNS0yNy03OC04LTEyOSA0MCAyMCA3NCA0MiA3OCA3OSA3LTQwIDI0LTU5IDQ2LTcyIDM5IDMwIDQ4IDcxIDQxIDExNyA0NS0yNSA4OC0zNCAxMjYtMjQtOSAzOS0yNyA3Ny02NCAxMTUgNjEgMjUgMjMgNDgtODkgNjh6bTUyLTExMmMtNS00LTMyIDItNDEgMTQgOC0xMSAxMS00NiAxMS00NmwtMTQgNiA3LTMxYy0xMCA2LTE4IDE2LTI2IDMyIDMtMTYgNC0yOSAxLTM3LTcgMTUtMTEgMjgtMjAgNDAgMCAwLTEtMTcgNC0zMS01IDMtMTIgMTktMTYgMjQtMyA1IDUtMjIgNS0zMC0xMCAwLTI1IDE5LTM0IDMzLTkgMTMtMi0yNS0yLTI1cy0xMCAwLTE1IDgtNiA1MC02IDUwYy05LTIyLTQtMjktNC0yOXMtNy0xLTEyIDE1Yy02IDE2LTcgMjUgMTkgNjEgMTggMjYgNTAgMjMgNjYgMjAgMyAwIDExLTEgMTMtNCA0LTQgOS0xNSAxNy0xNXMyNi04IDMwLTE5YzMtMTEtNi05LTItMTQgNS00IDE1LTE5IDE5LTIyek0yMzcgMzg4YzM5IDYzIDEwMSAxMDAgMTc2IDEwNSAyMy0zMy03LTg1LTQwLTE1MC0xNyA2LTQyIDEyLTc2IDE5LTE3IDE3LTM5IDI4LTYwIDI2eiIgc3R5bGU9ImZpbGw6I2ZmZjtmaWxsLW9wYWNpdHk6MSIvPjwvc3ZnPg==&logoColor=white&labelColor=green)](https://lilypond.org/)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?logo=creativecommons&logoColor=white)](https://creativecommons.org/licenses/by/4.0/)
 
-# Johann Baptist Wanhal: Missae Dubiosae in D and in G
+# J. B. Wanhal: Missae Dubiosae in D and in G
 
 ## What is this and why is it here?
 
@@ -16,16 +16,16 @@ station](https://www.radioswissclassic.ch/).
 
 Intrigued by his style, not least by his use of minor-key
 _Sturm-und-Drang_-like dramatism, I decided to have a look at what else he
-might have composed. Thankfully, works attributed to Wanhal have been
+might have composed. Thankfully, works attributed to Wanhal had been
 [cataloged](https://cmc.wp.musiclibraryassoc.org/thematic-index/vanhal-johann-baptist-1739-1813/)
 by scholars Paul Bryan (symphonies) and Alexander Weinmann (non-symphonic
-works). These indices revealed an extraordinarily large corpus of works; his
-output of over 1300 compositions apparently included at least 100 quartets and
+works). These indices reveal an extraordinarily impressive corpus of works; his
+output of over 1,300 compositions apparently included at least 100 quartets and
 over 70 symphonies. Excitingly, the catalog also mentions over 100 sacred works
 with at least 58 masses. As a life-long singer and avid (amateur) performer of
 church music, to me this presented an interesting potential. Unfortunately,
 only two of these masses appear to have been published, the rest survives only
-in manuscripts and copies in a multitude of archives all across Europe.
+in manuscripts and copies in a multitude of archives strewn all across Europe.
 
 The [Répertoire International des Sources Musicales (RISM)](https://rism.info/)
 proved an invaluable resource at revealing where these forgotten pieces may be
@@ -87,7 +87,7 @@ should be among those.
 
 - Catalogus novus Wanhali: [Nokki dubious
   4](https://ilmondodellaluna.com/Wanhal/d4.html)
-- Weinmann XIX:F5
+- Weinmann Verzeichnis XIX:F5
 - RISM: [400013336](https://opac.rism.info/id/rismid/rism400013336)
 - Working directory: [nokki-d4](nokki-d4)
 
@@ -95,6 +95,6 @@ should be among those.
 
 - Catalogus novus Wanhali: [Nokki dubious
   6](https://ilmondodellaluna.com/Wanhal/d6.html)
-- Weinmann XIX:G6
+- Weinmann Verzeichnis XIX:G6
 - RISM: [400013340](https://opac.rism.info/id/rismid/rism400013340)
 - Working directory: [nokki-d6](nokki-d6)

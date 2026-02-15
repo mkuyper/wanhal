@@ -1,13 +1,14 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg?logo=creativecommons&logoColor=white)](https://creativecommons.org/licenses/by/4.0/)
 
-![Title Page](manuscript/titlepage.jpg)
-
 # Missa in G
 
 _Johann Baptist Wanhal (attribution dubious)_
 
-[Nokki dubious 6](https://ilmondodellaluna.com/Wanhal/d6.html)
-Weinmann XIX:G6
+[![Nokki dubious 6](https://img.shields.io/badge/CNW-Nokki_dubious_6-blue)](https://ilmondodellaluna.com/Wanhal/d6.html)
+[![Weinmann XIX:G6](https://img.shields.io/badge/WeiV-XIX%3AG6-red)](#)
+[![RISM 400013340](https://img.shields.io/badge/RISM-400013340-orange)](https://opac.rism.info/id/rismid/rism400013340)
+
+![Title Page](manuscript/titlepage.jpg)
 
 Notes from _Catalogus novus Wanhali_:
 > This work survives only in one peripheral source. It is stylistically

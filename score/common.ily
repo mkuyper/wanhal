@@ -49,3 +49,11 @@ vocal = {
 showbarno = {
   \once \override Score.BarNumber.break-visibility = ##(#t #t #t)
 }
+
+% Figured bass: Fifth (diminished) with Telemann arc
+taV = \markup \left-align {
+  \fontsize #-5 \combine
+    \center-align \number 5
+    \center-align \translate-scaled #'(0 . 2.75) \rotate #180
+      \musicglyph #"ties.lyric.default"
+}

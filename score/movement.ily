@@ -28,6 +28,8 @@
   (score:part-include movdir "vlc")
   (score:part-include movdir "bvlc")
 
+  (score:part-include movdir "org")
+
   (score:part-include movdir "vla2")
   (score:part-include movdir "vlacb")
 
@@ -82,6 +84,8 @@ movementMusic = #(define-scheme-function
         #(score:part-staff movid "vlc" "Violoncello" "Vlc" "cello")
         #(score:part-staff movid "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass")
       >>
+      #(score:part-staff movid "org" "Organo" "Org" "church organ")
+      #(score:part-figures movid "org")
     >>}
   #})
 

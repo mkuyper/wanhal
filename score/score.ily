@@ -71,3 +71,10 @@
         #(score:call movid part "words")
       }
    #}))
+
+#(define (score:part-figures movid part)
+   (if (score:part-enabled movid part) #{
+     \new FiguredBass {
+       #(score:call movid part "fig")
+     }
+   #}))

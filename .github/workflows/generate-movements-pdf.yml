@@ -1,5 +1,10 @@
 name: Generate Movement/Work PDF Files
-on: [push]
+on:
+  push:
+    paths:
+      - '**/*.ly'
+      - '**/*.ily'
+      - '**/*.mk'
 jobs:
   build:
     runs-on: ubuntu-latest

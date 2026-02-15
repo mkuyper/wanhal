@@ -101,7 +101,7 @@ _Andante non molto_: 4/4, G major, 1-83 (83 bars)
 
 | Fl I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc/Cb | Org
 | ------- | -------- | -------- | ------- | --- | ------ | ---
-| ⬜️⬜️    | ⬜️⬜️     | ⬜️⬜️⬜️⬜️ | ⬜️⬜️    | ⬜️  | ⬜️     | ⬜️
+| ⬜️⬜️    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅     | ⬜️
 
 This movement is marked _Allegro_ in some parts.
 

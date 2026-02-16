@@ -1,6 +1,11 @@
 #(use-modules (ice-9 ftw))
 #(use-modules (ice-9 regex))
 
+#(define (once:create init) (cons init 'null))
+
+#(define (once:tryuse once)
+   (if (car once) (begin (set-car! once #f) #t) #f))
+
 #(define (score:symbol . args)
    (string->symbol (apply string-append args)))
 
@@ -51,7 +56,7 @@
      (filter string? (list name (score:part-transposed-key movid part)))
      " in "))
 
-#(define (score:part-staff movid part iname siname miname)
+#(define (score:part-staff toc movid part iname siname miname)
    (if (score:part-enabled movid part) #{
       \new Staff \with {
         instrumentName = #(score:part-transposed-name movid part iname)
@@ -60,6 +65,9 @@
       } {
         \override Staff.InstrumentName.self-alignment-X = #RIGHT
         \new Voice = #part {
+          #(if (once:tryuse toc) #{
+            \tocItem \markup { #(score:call movid "piece") }
+          #})
           #(score:call movid part)
         }
       }

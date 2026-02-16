@@ -31,7 +31,7 @@
 #(set-global-staff-size 15)
 
 \score {
-  \movementMusic #movement:id
+  \movementMusic #movement:id ##t
 
   \header {
     piece = \markup { \fontsize #3 { #(score:call movement:id "piece") } }
@@ -45,7 +45,7 @@
   }
 }
 \score {
-  \unfoldRepeats \movementMusic #movement:id
+  \unfoldRepeats \movementMusic #movement:id ##f
   \midi {
     \context {
       \Score midiChannelMapping = #'staff

@@ -38,56 +38,58 @@
   (score:part-include movdir "common"))
 
 movementMusic = #(define-scheme-function
-  (parser location movid)
-  (string?) #{
+  (parser location movid gen-toc)
+  (string? boolean?)
+  (let () (define toc (once:create gen-toc))
+  #{
     {<<
       \new StaffGroup <<
-        #(score:part-staff movid "fl-i" "Flauto I" "Fl I" "flute")
-        #(score:part-staff movid "fl-ii" "Flauto II" "Fl II" "flute")
+        #(score:part-staff toc movid "fl-i" "Flauto I" "Fl I" "flute")
+        #(score:part-staff toc movid "fl-ii" "Flauto II" "Fl II" "flute")
       >>
       \new StaffGroup <<
-        #(score:part-staff movid "cla-i" "Clarinetto I" "Cl I" "clarinet")
-        #(score:part-staff movid "cla-ii" "Clarinetto II" "Cl II" "clarinet")
+        #(score:part-staff toc movid "cla-i" "Clarinetto I" "Cl I" "clarinet")
+        #(score:part-staff toc movid "cla-ii" "Clarinetto II" "Cl II" "clarinet")
       >>
       \new StaffGroup <<
-        #(score:part-staff movid "ob-i" "Oboe I" "Ob I" "oboe")
-        #(score:part-staff movid "ob-ii" "Oboe II" "Ob II" "oboe")
+        #(score:part-staff toc movid "ob-i" "Oboe I" "Ob I" "oboe")
+        #(score:part-staff toc movid "ob-ii" "Oboe II" "Ob II" "oboe")
       >>
       \new StaffGroup <<
-        #(score:part-staff movid "cor-i" "Corno I" "Cor I" "french horn")
-        #(score:part-staff movid "cor-ii" "Corno II" "Cor II" "french horn")
+        #(score:part-staff toc movid "cor-i" "Corno I" "Cor I" "french horn")
+        #(score:part-staff toc movid "cor-ii" "Corno II" "Cor II" "french horn")
       >>
       \new StaffGroup <<
-        #(score:part-staff movid "tr-i" "Tromba I" "Tr I" "trumpet")
-        #(score:part-staff movid "tr-ii" "Tromba II" "Tr II" "trumpet")
+        #(score:part-staff toc movid "tr-i" "Tromba I" "Tr I" "trumpet")
+        #(score:part-staff toc movid "tr-ii" "Tromba II" "Tr II" "trumpet")
       >>
-      #(score:part-staff movid "tim" "Timpani" "Timp" "timpani")
+      #(score:part-staff toc movid "tim" "Timpani" "Timp" "timpani")
       \new ChoirStaff <<
-        #(score:part-staff movid "sop" "Soprano" "S" "choir aahs")
+        #(score:part-staff toc movid "sop" "Soprano" "S" "choir aahs")
         #(score:part-lyrics movid "sop")
 
-        #(score:part-staff movid "alt" "Alto" "A" "choir aahs")
+        #(score:part-staff toc movid "alt" "Alto" "A" "choir aahs")
         #(score:part-lyrics movid "alt")
 
-        #(score:part-staff movid "ten" "Tenore" "T" "choir aahs")
+        #(score:part-staff toc movid "ten" "Tenore" "T" "choir aahs")
         #(score:part-lyrics movid "ten")
 
-        #(score:part-staff movid "bas" "Basso" "B" "choir aahs")
+        #(score:part-staff toc movid "bas" "Basso" "B" "choir aahs")
         #(score:part-lyrics movid "bas")
       >>
       \new StaffGroup \with { \consists "Metronome_mark_engraver" } <<
-        #(score:part-staff movid "vl-i" "Violino I" "Vl I" "violin")
-        #(score:part-staff movid "vl-ii" "Violino II" "Vl II" "violin")
-        #(score:part-staff movid "vla" "Viola" "Vla" "viola")
-        #(score:part-staff movid "vla-ii" "Viola II" "Vla II" "viola")
-        #(score:part-staff movid "vlacb" "Viola III" "Vla III" "viola")
-        #(score:part-staff movid "vlc" "Violoncello" "Vlc" "cello")
-        #(score:part-staff movid "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass")
+        #(score:part-staff toc movid "vl-i" "Violino I" "Vl I" "violin")
+        #(score:part-staff toc movid "vl-ii" "Violino II" "Vl II" "violin")
+        #(score:part-staff toc movid "vla" "Viola" "Vla" "viola")
+        #(score:part-staff toc movid "vla-ii" "Viola II" "Vla II" "viola")
+        #(score:part-staff toc movid "vlacb" "Viola III" "Vla III" "viola")
+        #(score:part-staff toc movid "vlc" "Violoncello" "Vlc" "cello")
+        #(score:part-staff toc movid "bvlc" "Basso e Violoncello" "B/Vlc" "contrabass")
       >>
-      #(score:part-staff movid "org" "Organo" "Org" "church organ")
+      #(score:part-staff toc movid "org" "Organo" "Org" "church organ")
       #(score:part-figures movid "org")
     >>}
-  #})
+  #}))
 
 copyright-cc-by = \markup \center-column {
   \pad-markup #2 \line {

@@ -12,7 +12,7 @@
 
 #(define (work:mov-score movid) #{
     \score {
-      \movementMusic #movid
+      \movementMusic #movid ##t
 
       \header {
         piece = \markup { \fontsize #3 { #(score:call movid "piece") } }
@@ -33,6 +33,7 @@
   system-separator-markup = \slashSeparator
   system-system-spacing.minimum-distance = #24
   system-system-spacing.padding = #8
+  tocItemMarkup = \tocItemWithDotsMarkup
 }
 
 \header {
@@ -69,3 +70,7 @@
 #(for-each (lambda (movdir)
              (score:toplevel-add (work:mov-score (score:mov-id movdir))))
            work:movdirs)
+
+\pageBreak
+\markup \vspace #5
+\markuplist \table-of-contents

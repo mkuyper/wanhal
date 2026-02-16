@@ -11,7 +11,7 @@ etincarnatus-alt = \relative c'' {
   R2*12
 
   %66
-  cs8 cs4 b16[ a]
+  cs8^\solo-ed cs4 b16[ a]
 
   %67
   d b cs8 r cs

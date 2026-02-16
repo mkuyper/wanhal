@@ -12,9 +12,17 @@ ann = #(define-scheme-function
     \markup { \small \italic { #info } }
   #})
 
-solo = \ann \markup { \bold "Solo" }
-tutti = \ann \markup { \bold "Tutti" }
-dolce = \ann \markup { \italic dolce }
+ann-ed = #(define-scheme-function
+  (parser location info)
+  (markup?) #{
+    \markup { \bracket \small \italic { #info } }
+  #})
+
+
+solo = \ann \markup { "Solo" }
+solo-ed = \ann-ed \markup { "Solo" }
+tutti = \ann \markup { "Tutti" }
+tutti-ed = \ann-ed \markup { "Tutti" }
 
 trem = #(define-music-function
   (parser location count note)

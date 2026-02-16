@@ -11,7 +11,7 @@ etincarnatus-sop = \relative c'' {
   R2*12
 
   %66
-  e8 e4 d16[ cs]
+  e8^\solo-ed e4 d16[ cs]
 
   %67
   fs gs a8 r e

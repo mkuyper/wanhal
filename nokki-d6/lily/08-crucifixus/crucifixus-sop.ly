@@ -8,7 +8,7 @@ crucifixus-sop = \relative c'' {
 
   %1
   \crucifixus-start
-  c2 c
+  c2^\tutti-ed c
 
   %2
   b b

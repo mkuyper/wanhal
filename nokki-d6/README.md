@@ -86,7 +86,7 @@ _Adagio_: 2/4, A major, 54-121 (68 bars)
 
 | SA   | Vl I/II | Vla | Vlc
 | ---- | ------- | --- | ---
-| ✅⬜️ | ✅✅    | ✅  | ✅
+| ✅✅ | ✅✅    | ✅  | ✅
 
 ### 8. Crucifixus
 

@@ -8,7 +8,7 @@ crucifixus-alt = \relative c' {
 
   %1
   \crucifixus-start
-  e2 e
+  e2^\tutti-ed e
 
   %2
   d4( f) e( d)

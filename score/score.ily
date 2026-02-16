@@ -4,7 +4,7 @@
 #(define (once:create init) (cons init 'null))
 
 #(define (once:tryuse once)
-   (if (car once) (begin (set-car! once #f) #t) #f))
+   (let () (define v (car once)) (if v (set-car! once #f)) v))
 
 #(define (score:symbol . args)
    (string->symbol (apply string-append args)))

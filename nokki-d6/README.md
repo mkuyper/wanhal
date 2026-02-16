@@ -84,9 +84,9 @@ _Andantino_: 6/8, A major, 1-53 (53 bars)
 
 _Adagio_: 2/4, A major, 54-121 (68 bars)
 
-| Ob I/II | Cor I/II | SA   | Vl I/II | Vla | Vlc
-| ------- | -------- | ---- | ------- | --- | ---
-| ⬜️⬜️    | ⬜️⬜️     | ⬜️⬜️ | ✅✅    | ✅  | ✅
+| SA   | Vl I/II | Vla | Vlc
+| ---- | ------- | --- | ---
+| ⬜️⬜️ | ✅✅    | ✅  | ✅
 
 ### 8. Crucifixus
 

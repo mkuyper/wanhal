@@ -98,3 +98,12 @@ should be among those.
 - Weinmann Verzeichnis XIX:G6
 - RISM: [400013340](https://opac.rism.info/id/rismid/rism400013340)
 - Working directory: [nokki-d6](nokki-d6)
+
+## Builds
+
+PDF scores are automatically generated every time this repository is updated.
+These can be found on the project's [GitHub
+Pages](https://mkuyper.github.io/wanhal/).
+
+A few renderings of some movements can also be found on the [Samples Wiki
+page](https://github.com/mkuyper/wanhal/wiki/Samples).

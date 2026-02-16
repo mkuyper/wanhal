@@ -204,7 +204,7 @@ etincarnatus-sop-words = \lyricmode {
   ne,
   et __ ho -- mo __ fac -- tus __ est,
   ho -- mo __ fac -- tus,
-  ho -- mo, __ ho -- mo __ fac -- tus est,
+  ho -- mo, __ ho -- mo __ fac -- tus __ est,
 
   %118
   ho -- mo __ fac -- tus est.

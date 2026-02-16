@@ -1,0 +1,47 @@
+name: Generate PDF Files and Pages
+on:
+  push:
+    paths:
+      - '**/*.ly'
+      - '**/*.ily'
+      - '**/*.mk'
+      - '.github/pages/*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: codello/lilypond:stable
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+      - name: Typeset music
+        shell: bash
+        run: |
+          for w in nokki-d4 nokki-d6; do
+            BUILD_TAG="${GITHUB_SHA}" BUILD_USER="${GITHUB_ACTOR}" make -C $w/lily
+          done
+      - name: Generate pages
+        shell: bash
+        run: |
+          (cd .github/pages && sh build.sh)
+          for w in nokki-d4 nokki-d6; do
+            cp $w/lily/$w.pdf .github/pages/build/
+          done
+      - name: Upload generated pages as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .github/pages/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

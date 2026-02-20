@@ -194,7 +194,7 @@ kyrie-vlc = \relative c' {
   c c r e
 
   %67
-  \trem 4 fs
+  \trem 4 f
 
   %68
   g r r4

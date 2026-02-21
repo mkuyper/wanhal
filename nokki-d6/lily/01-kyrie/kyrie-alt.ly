@@ -559,7 +559,7 @@ kyrie-alt-words = \lyricmode {
 
   %49
   lei -- son, __ e -- lei -- son, e -- lei -- son,
-  Ky -- ri -- e __ e -- lei -- son, __ e --
+  Ky -- ri -- e __ e -- lei -- son, e --
 
   %55
   lei -- son,
@@ -579,7 +579,7 @@ kyrie-alt-words = \lyricmode {
 
   %93
   e -- lei -- son.
-  Ky -- ri -- e e -- lei -- son,
+  Ky -- ri -- e __ e -- lei -- son,
   e --
 
   %101
@@ -637,7 +637,7 @@ kyrie-alt-words = \lyricmode {
 
   %186
   lei -- son. __
-  Ky -- ri -- e e -- lei -- son,
+  Ky -- ri -- e __ e -- lei -- son,
   e -- lei --
 
   %193

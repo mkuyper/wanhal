@@ -514,7 +514,7 @@ kyrie-sop-words = \lyricmode {
 
   %79
   e -- lei -- son,
-  Chris -- te __ e -- lei -- son, e -- lei --
+  Chris -- te e -- lei -- son, e -- lei --
 
   %87
   son, e -- lei -- son, e -- lei --

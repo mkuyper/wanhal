@@ -1,5 +1,7 @@
 \language "english"
 
+gloria-cor-ii-key = #"D"
+
 gloria-cor-ii = \relative c'' {
   \clef treble
   \transposition d

@@ -155,7 +155,7 @@ kyrie-vlc = \relative c' {
   a8 r a' r
 
   %54
-  d, e16 g d'8 r
+  d, fs16 a d8 r
 
   %55
   a, r a' r

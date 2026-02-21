@@ -24,6 +24,14 @@ solo-ed = \ann-ed \markup { "Solo" }
 tutti = \ann \markup { "Tutti" }
 tutti-ed = \ann-ed \markup { "Tutti" }
 
+tbc = #(define-music-function
+  (parser location note)
+  (ly:music?) #{
+    \staffHighlight "lightpink"
+    { #note }^\ann-ed \markup { "tbc" }
+    \stopStaffHighlight
+  #})
+
 trem = #(define-music-function
   (parser location count note)
   (number? ly:music?) #{

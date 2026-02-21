@@ -154,7 +154,7 @@ kyrie-vl-i = \relative c' {
   b b( cs) cs d a( g fs)
 
   %50
-  fs8 e a32(\f g a g) a fs( e d)
+  fs8 e a32(\f gs a gs) a fs( e d) % EDIT: source has g♮
 
   %51
   a'8 a, r4
@@ -378,7 +378,7 @@ kyrie-vl-i = \relative c' {
   ds8 fs16 ds b a g fs
 
   %124
-  e\p c''( g e) b( g e b)
+  e\p b''( g e) b( g e b)
 
   %125
   a b''( fs ds) b fs ds a
@@ -450,8 +450,7 @@ kyrie-vl-i = \relative c' {
   b( a b cs) d( cs d e)
 
   %143
-  fs8 r
-  \slashedGrace d,,8 d16\p a b c
+  fs8 r16 d,,\p d a b c
 
   %144
   \slashedGrace cs8 d d~ d16 b'( a g)
@@ -511,7 +510,7 @@ kyrie-vl-i = \relative c' {
   fs g a b d c( b a)
 
   %162
-  a8 g'16 g fs fs e e
+  b8 g'16 g fs fs e e
 
   %163
   d8 c'( b a)

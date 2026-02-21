@@ -28,7 +28,7 @@ tbc = #(define-music-function
   (parser location note)
   (ly:music?) #{
     \staffHighlight "lightpink"
-    { #note }^\ann-ed \markup { "tbc" }
+    { #note }^\markup { \center-align { "[?]" } }
     \stopStaffHighlight
   #})
 

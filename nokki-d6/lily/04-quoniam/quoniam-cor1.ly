@@ -1,5 +1,7 @@
 \language "english"
 
+quoniam-cor-i-key = #"C"
+
 quoniam-cor-i = \relative c'' {
   \clef treble
   \key c \major

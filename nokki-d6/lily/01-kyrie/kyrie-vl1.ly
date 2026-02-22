@@ -196,7 +196,7 @@ kyrie-vl-i = \relative c' {
   g16 g8 g16 fs fs e e
 
   %64
-  e( ds) ds4 e8
+  e( ds) ds4 ds8
 
   %65
   e32 g( fs e) ds e( ds e)
@@ -213,14 +213,17 @@ kyrie-vl-i = \relative c' {
   %68
   d16 d,( e d) g f( e d)
 
-  %69-72
-  \rep 2 {
-    %69/71
-    d( b e d) d( c b c)
+  %69
+  d( b e d) d( c b c)
 
-    %70/72
-    b( d e d) g( f e d)
-  }
+  %70
+  b( d e d) g( f e d)
+
+  %71
+  d( b e d) d( c b c)
+
+  %72 - EDIT: double Ob 1
+  b( c d e) g( f e d)
 
   %73
   e8 c'16 c~ c b b( a)

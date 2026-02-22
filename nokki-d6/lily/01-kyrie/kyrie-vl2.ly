@@ -221,14 +221,17 @@ kyrie-vl-ii = \relative c' {
   %68
   b16 b,( c b) e d( c b)
 
-  %69-72
-  \rep 2 {
-    %69/71
-    b g( c b) b a( g a)
-    
-    %70/72
-    g b( c b) e d( c b)
-  }
+  %69
+  b g( c b) b a( g a)
+
+  %70
+  g b( c b) e d( c b)
+
+  %71
+  b g( c b) b a( g a)
+
+  %72 - EDIT: double Ob 2
+  g a( b c) e d( c b)
 
   %73
   c8 g'16 g f f e e

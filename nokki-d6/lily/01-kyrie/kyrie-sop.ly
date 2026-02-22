@@ -182,7 +182,7 @@ kyrie-sop = \relative c'' {
   a[( g f e] d[ c b c]
 
   %80
-  a16[ b32 cs] d[ e f g] a16[ f d cs])
+  a16[ b32 cs] d[ e f g] a16[ f d c]) % EDIT: source is missing ♮ on last c
 
   %81
   b8 r r4

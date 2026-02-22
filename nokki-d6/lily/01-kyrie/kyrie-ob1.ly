@@ -111,7 +111,7 @@ kyrie-ob-i = \relative c''' {
   d b e( d) d c( b c)
 
   %72
-  b( \tbc { c d e) } g f( e d)
+  b( c d e) g f( e d)
 
   %73
   e8 r r4
@@ -262,14 +262,17 @@ kyrie-ob-i = \relative c''' {
   %157
   r16 a(^\solo b a) d cs( b a)
 
-  %158-161
-  \rep 2 {
-    %158/160
-    a( fs b a) g( e a g)
+  %158
+  a( fs b a) g( e a g)
 
-    %159/161
-    fs( g a b) d( c b a)
-  }
+  %159 EDIT: source says ident with 161 but clearly wrong; see Vl 1.
+  fs( a b a) d( cs b a)
+
+  %160
+  a( fs b a) g( e a g)
+
+  %161
+  fs( g a b) d( c b a)
 
   %162
   b8 r r4

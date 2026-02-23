@@ -35,8 +35,11 @@ $(MOV).mp3: $(MOV).wav
 $(MOV)-roll.pdf: $(SCOREDIR)/movement-roll.ly $(SRCS)
 	$(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
 
+$(MOV)-roll.png: $(MOV)-roll.pdf
+	convert -density 300 $< -flatten -resize x1080 $@
+
 clean:
-	rm -f *.pdf *.midi *.mp3 *.wav
+	rm -f *.pdf *.midi *.mp3 *.wav *.png
 
 .PHONY: clean default
 

@@ -1,4 +1,4 @@
-etincarnatus-piece = "9. Et incarnatus"
+etincarnatus-piece = "7. Et incarnatus"
 
 etincarnatus-start = {
   \set Score.currentBarNumber = #54

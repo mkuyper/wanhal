@@ -14,6 +14,8 @@
 #(movement:include movement:dir)
 
 \paper {
+  left-margin = 4\cm
+  indent = #0
   page-breaking = #ly:one-line-auto-height-breaking
 }
 

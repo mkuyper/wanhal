@@ -8,4 +8,4 @@ mkdir -p ${BUILD}
 sed "s/__build-tag/${GITHUB_SHA:-(unknown)}/g; s/__build-date/${BUILD_DATE}/g" \
     index.html > ${BUILD}/index.html
 
-cp bg.png portrait.png ${BUILD}/
+cp bg.png portrait.png samples.html ${BUILD}/

@@ -103,7 +103,7 @@ should be among those.
 
 PDF scores are automatically generated every time this repository is updated.
 These can be found on the project's [GitHub
-Pages](https://mkuyper.github.io/wanhal/).
+Pages website](https://mkuyper.github.io/wanhal/).
 
-A few renderings of some movements can also be found on the [Samples Wiki
-page](https://github.com/mkuyper/wanhal/wiki/Samples).
+Some audio/video renderings can be watched on the [Samples
+page](https://mkuyper.github.io/wanhal/samples.html).

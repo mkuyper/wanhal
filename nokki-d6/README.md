@@ -50,7 +50,11 @@ _Andante_: 2/4, G major, 97-224 (128 bars)
 
 | SATB     | Vl I/II | Vla I/II | Vlc
 | -------- | ------- | -------- | ---
-| ✅✅✅✅ | ✅✅    | ✅✅     | ✅
+| ✅✅✅✅ | ✅✅    | ✅(✅)   | ✅
+
+The Viola II part is currently missing a page from the manuscript
+facsimile. Bars 162-224 cannot be transcribed yet for this
+reason.
 
 ### 4. Quoniam
 

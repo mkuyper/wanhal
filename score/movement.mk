@@ -14,10 +14,7 @@ endif
 MOV ?= $(lastword $(subst -, ,$(notdir $(CURDIR))))
 
 SRCS += $(wildcard *.ly)
-SRCS += $(SCOREDIR)/build.ily
-SRCS += $(SCOREDIR)/common.ily
-SRCS += $(SCOREDIR)/movement.ily
-SRCS += $(SCOREDIR)/score.ily
+SRCS += $(wildcard $(SCOREDIR)/*.ily)
 
 LILYOPTS += -dno-point-and-click
 

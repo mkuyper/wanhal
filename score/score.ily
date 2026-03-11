@@ -1,10 +1,37 @@
+\include "parts.ily"
+\include "mov.ily"
+
 #(use-modules (ice-9 ftw))
 #(use-modules (ice-9 regex))
+#(use-modules (srfi srfi-9))
+
 
 #(define (once:create init) (cons init 'null))
 
 #(define (once:tryuse once)
    (let () (define v (car once)) (if v (set-car! once #f)) v))
+
+
+#(define-record-type <score:ctx>
+   (score:make-ctx)
+   score:ctx?
+   (movid  score:ctx-movid   score:set-ctx-movid!)
+   (partid score:ctx-partid  score:set-ctx-partid!))
+
+#(define score:ctx (score:make-ctx))
+
+#(define (score:current-movid)
+   (score:ctx-movid score:ctx))
+
+#(define (score:current-partid)
+   (score:ctx-partid score:ctx))
+
+#(define (score:set-current-movid! movid)
+   (score:set-ctx-movid! score:ctx movid))
+
+#(define (score:set-current-partid! partid)
+   (score:set-ctx-partid! score:ctx partid))
+
 
 #(define (score:symbol . args)
    (string->symbol (apply string-append args)))
@@ -56,33 +83,43 @@
      (filter string? (list name (score:part-transposed-key movid part)))
      " in "))
 
-#(define (score:part-staff toc movid part iname siname miname)
-   (if (score:part-enabled movid part) #{
-      \new Staff \with {
-        instrumentName = #(score:part-transposed-name movid part iname)
-        shortInstrumentName = #siname
-        midiInstrument = #miname
-      } {
-        \override Staff.InstrumentName.self-alignment-X = #RIGHT
-        \new Voice = #part {
-          #(if (once:tryuse toc) #{
-            \tocItem \markup { #(score:call movid "piece") }
-          #})
-          #(score:call movid part)
+#(define (score:part-staff toc movid partid)
+   (let* ((p (parts:get partid))
+          (part (parts:part-lid p))
+          (iname (parts:part-lname p))
+          (siname (parts:part-sname p))
+          (miname (parts:part-midi p)))
+     (score:set-current-partid! partid)
+     (if (score:part-enabled movid part) #{
+        \new Staff \with {
+          instrumentName = #(score:part-transposed-name movid part iname)
+          shortInstrumentName = #siname
+          midiInstrument = #miname
+        } {
+          \override Staff.InstrumentName.self-alignment-X = #RIGHT
+          \new Voice = #part {
+            #(if (once:tryuse toc) #{
+              \tocItem \markup { #(score:call movid "piece") }
+            #})
+            #(score:call movid part)
+          }
         }
-      }
-   #}))
+     #})))
 
-#(define (score:part-lyrics movid part)
-   (if (score:part-enabled movid part) #{
-      \new Lyrics \lyricsto #part {
-        #(score:call movid part "words")
-      }
-   #}))
+#(define (score:part-lyrics movid partid)
+   (let* ((p (parts:get partid))
+          (part (parts:part-lid p)))
+     (if (score:part-enabled movid part) #{
+        \new Lyrics \lyricsto #part {
+          #(score:call movid part "words")
+        }
+     #})))
 
-#(define (score:part-figures movid part)
-   (if (score:part-enabled movid part) #{
-     \new FiguredBass {
-       #(score:call movid part "fig")
-     }
-   #}))
+#(define (score:part-figures movid partid)
+   (let* ((p (parts:get partid))
+          (part (parts:part-lid p)))
+     (if (score:part-enabled movid part) #{
+       \new FiguredBass {
+         #(score:call movid part "fig")
+       }
+     #})))

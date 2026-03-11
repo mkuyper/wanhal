@@ -1,10 +1,11 @@
 \version "2.24.1"
 
 #(define score:topdir ".")
+\include "score.ily"
 
 \include "build.ily"
+\include "copyright.ily"
 \include "common.ily"
-\include "movement.ily"
 
 \include "project.ily"
 
@@ -12,7 +13,7 @@
 
 #(define (work:mov-score movid) #{
     \score {
-      \movementMusic #movid ##t
+      #(mov:music movid #t)
 
       \header {
         piece = \markup { \fontsize #3 { #(score:call movid "piece") } }
@@ -22,12 +23,13 @@
         short-indent = 1.5\cm
         \context {
           \Score tempoHideNote = ##t
+          \remove Metronome_mark_engraver
         }
       }
     }    
   #})
 
-#(for-each (lambda (movdir) (movement:include movdir)) work:movdirs)
+#(mov:include)
 
 \paper {
   system-separator-markup = \slashSeparator

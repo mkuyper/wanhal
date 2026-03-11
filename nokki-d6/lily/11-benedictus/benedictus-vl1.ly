@@ -62,7 +62,7 @@ benedictus-vl-i = \relative c'' {
   g,16\p e'
 
   %19
-  c( c c8) c r
+  d( c) c8 c r % EDIT: source has c on 1
 
   %20
   r d d g,16( g')

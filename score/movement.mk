@@ -21,7 +21,7 @@ LILYOPTS += -dno-point-and-click
 default: $(MOV).pdf $(DEFAULT_TARGETS)
 
 %.pdf %.midi: $(SCOREDIR)/movement.ly $(SRCS)
-	$(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
+	SCORE_TOPDIR=.. $(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
 
 $(MOV).wav: $(MOV).midi $(SYNTHMAP)
 	$(RUN_MIDISYNTH) --config $(SYNTHMAP) $< $@

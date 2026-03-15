@@ -1,6 +1,5 @@
 \version "2.24.1"
 
-#(define score:topdir "..")
 \include "score.ily"
 
 \include "build.ily"

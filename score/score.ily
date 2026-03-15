@@ -5,6 +5,9 @@
 #(use-modules (ice-9 regex))
 #(use-modules (srfi srfi-9))
 
+#(define score:scoredir (dirname (car (ly:input-file-line-char-column (*location*)))))
+#(define score:topdir (or (getenv "SCORE_TOPDIR") "."))
+
 
 #(define (once:create init) (cons init 'null))
 
@@ -44,7 +47,7 @@
      (ly:parser-include-string (string-append "\\include \"" file "\""))))
 
 #(define (score:asset file)
-   (string-append score:topdir "/../../score/assets/" file))
+   (string-append score:scoredir "/assets/" file))
 
 #(define (score:toplevel-add score)
    (ly:parser-define! 'toplevel-scores

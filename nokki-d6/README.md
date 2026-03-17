@@ -22,6 +22,17 @@ Notes from _Catalogus novus Wanhali_:
 > different sources, where one or more movements are by Wanhal, but it has not
 > been possible to provide any examples of borrowings from other works.
 
+**Instrumentation:** Soli (SATB), Coro (SATB), 2 Oboi, 2 Corni, 2 Violini, 2
+Viole, Violoncello, Organo
+
+**Extent:** 1397 bars (ca. 45 min)
+
+---
+
+⬜️ Transcription incomplete / not started  
+✅ Transcription completed
+
+
 ## Kyrie
 
 ### 1. Kyrie

@@ -17,8 +17,8 @@
 
 #(define (mov:music movid gen-toc)
   (let () (define toc (once:create gen-toc))
-    (score:set-current-movid! movid)
     #{
+      \set Score.currentMovId = #movid
       {<<
         \new StaffGroup \with {
           \consists "Metronome_mark_engraver" \remove "Span_bar_engraver"

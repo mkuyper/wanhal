@@ -1,9 +1,12 @@
 \include "parts.ily"
 \include "mov.ily"
+\include "anno.ily"
+
+#(set-object-property! 'currentMovId 'translation-type? string?)
+#(set-object-property! 'currentPartId 'translation-type? string?)
 
 #(use-modules (ice-9 ftw))
 #(use-modules (ice-9 regex))
-#(use-modules (srfi srfi-9))
 
 #(define score:scoredir (dirname (car (ly:input-file-line-char-column (*location*)))))
 #(define score:topdir (or (getenv "SCORE_TOPDIR") "."))
@@ -13,27 +16,6 @@
 
 #(define (once:tryuse once)
    (let () (define v (car once)) (if v (set-car! once #f)) v))
-
-
-#(define-record-type <score:ctx>
-   (score:make-ctx)
-   score:ctx?
-   (movid  score:ctx-movid   score:set-ctx-movid!)
-   (partid score:ctx-partid  score:set-ctx-partid!))
-
-#(define score:ctx (score:make-ctx))
-
-#(define (score:current-movid)
-   (score:ctx-movid score:ctx))
-
-#(define (score:current-partid)
-   (score:ctx-partid score:ctx))
-
-#(define (score:set-current-movid! movid)
-   (score:set-ctx-movid! score:ctx movid))
-
-#(define (score:set-current-partid! partid)
-   (score:set-ctx-partid! score:ctx partid))
 
 
 #(define (score:symbol . args)
@@ -92,7 +74,6 @@
           (iname (parts:part-lname p))
           (siname (parts:part-sname p))
           (miname (parts:part-midi p)))
-     (score:set-current-partid! partid)
      (if (score:part-enabled movid part) #{
         \new Staff \with {
           instrumentName = #(score:part-transposed-name movid part iname)
@@ -104,6 +85,7 @@
             #(if (once:tryuse toc) #{
               \tocItem \markup { #(score:call movid "piece") }
             #})
+            \set Voice.currentPartId = #partid
             #(score:call movid part)
           }
         }

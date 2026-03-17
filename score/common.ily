@@ -1,10 +1,33 @@
 dashPlus = \trill
 
+% to be deprecated
 sourcenote = #(define-music-function
   (parser location offset info note)
   (number-pair? markup? ly:music?) #{
     \footnote #offset \markup { \concat { " Source: " #info } } #note
   #})
+
+annot = #anno:annotate
+
+annot-source = #(define-music-function
+  (parser location info notes)
+  (markup? ly:music?) #{
+    \annot \markup { \line { \vcenter "Source:" \vcenter #info } } { #notes }
+  #})
+
+annot-source-music = #(define-music-function
+  (parser location src-notes notes)
+  (ly:music? ly:music?) #{
+    \annot-source \markup { \score {
+      { #src-notes }
+      \layout {
+        indent = 0
+        #(layout-set-staff-size 9)
+        \context { \Staff \omit TimeSignature }
+      }
+    }} { #notes }
+  #})
+
 
 ann = #(define-scheme-function
   (parser location info)

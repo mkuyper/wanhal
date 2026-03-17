@@ -113,21 +113,16 @@ donanobis-alt = \relative c'' {
   a8 r r r4 r8
 
   %133-137
-  a,2. b
-  \sourcenote #'(1 . -1) \markup { "C♮" } cs
-  d a(
+  a,2. b cs d a(
 
   %138
-  b4 
-  \sourcenote #'(2 . -2) \markup { "C♮" } cs8
-  d4.~
+  b4 cs8 d4.~
 
   %139
   d2.)
 
   %140
-  \sourcenote #'(1 . -1) \markup { "C♮" } cs4
-  r8 r4 r8
+  cs4 r8 r4 r8
 
   %141-145
   a2. b cs d cs(

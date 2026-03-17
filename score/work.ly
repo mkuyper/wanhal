@@ -72,6 +72,9 @@
              (score:toplevel-add (work:mov-score (score:mov-id movdir))))
            work:movdirs)
 
+$(if (anno:has-annotations) #{ \pageBreak #})
+\markup #(anno:annotations)
+
 \pageBreak
 \markup \vspace #5
 \markuplist \table-of-contents

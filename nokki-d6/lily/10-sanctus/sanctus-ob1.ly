@@ -81,7 +81,7 @@ sanctus-ob-i = \relative c''' {
   
   %28
   a2 g8 fs( e)
-  \sourcenote #'(1 . 1) \markup { "G" } fs
+  \annot-source "G" fs
 
   %29
   fs2( g4) r
@@ -94,7 +94,7 @@ sanctus-ob-i = \relative c''' {
 
   %32
   a2 g8 fs( e)
-  \sourcenote #'(1 . 1) \markup { "G" } fs
+  \annot-source "G" fs
 
   %33
   fs2( g4) r

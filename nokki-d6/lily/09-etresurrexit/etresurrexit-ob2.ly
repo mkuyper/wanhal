@@ -63,9 +63,11 @@ etresurrexit-ob-ii = \relative c'' {
   d4 d4. cs8 b a
 
   %181
-  gs4 a
-  \sourcenote #'(-0.25 . 1) \markup { \tiny \note {4.} #1 } cs8(
-  b8) a-. gs-.
+  \annot-source-music {
+    \relative c'' { \key d \major \cadenzaOn \stemUp gs4 a( cs4.) b8[ a-. gs]-. \bar "|" }
+  } {
+    gs4 a cs8( b8) a-. gs-.
+  }
 
   %182
   a4 r r2

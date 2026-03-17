@@ -48,9 +48,7 @@ sanctus-vla = \relative c {
   a a( gs a b cs)
 
   %14
-  a4 r8 a'
-  \sourcenote #'(1 . 1) \markup { "G♮" } gs
-  fs
+  a4 r8 a' gs fs
 
   %15
   e d d d e e

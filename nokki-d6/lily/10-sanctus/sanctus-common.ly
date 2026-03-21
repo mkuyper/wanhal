@@ -1,5 +1,7 @@
 sanctus-piece = "10. Sanctus"
 
+sanctus-section = #'(sanctus . "Sanctus")
+
 sanctus-start = {
   \time 3/4
   \tempo "Adagio" 4 = 70

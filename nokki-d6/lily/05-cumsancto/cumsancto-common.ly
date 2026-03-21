@@ -1,5 +1,7 @@
 cumsancto-piece = "5. Cum Sancto Spiritu"
 
+cumsancto-section = #'gloria
+
 cumsancto-start = {
   \set Score.currentBarNumber = #377
   \time 4/4

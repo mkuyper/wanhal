@@ -1,5 +1,7 @@
 donanobis-piece = "13. Dona nobis"
 
+donanobis-section = #'agnusdei
+
 donanobis-start = {
   \set Score.currentBarNumber = #83
   \time 6/8

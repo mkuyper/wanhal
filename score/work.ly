@@ -35,6 +35,12 @@
   system-system-spacing.minimum-distance = #24
   system-system-spacing.padding = #8
   tocItemMarkup = \tocItemWithDotsMarkup
+  tocSectionMarkup = \markup \large \column {
+    \hspace #1
+    \fill-line { \italic \fromproperty #'toc:text \null \null }
+    \hspace #1
+  }
+  tocSpacerMarkup = \markup { \vspace #3 }
 }
 
 \header {
@@ -73,8 +79,12 @@
            work:movdirs)
 
 $(if (anno:has-annotations) #{ \pageBreak #})
+$(if (anno:has-annotations) (add-toc-item! 'tocSpacerMarkup ""))
+$(if (anno:has-annotations) (add-toc-item! 'tocItemMarkup "Notes"))
 \markup #(anno:annotations)
 
 \pageBreak
 \markup \vspace #5
+$(add-toc-item! 'tocSpacerMarkup "")
+$(add-toc-item! 'tocItemMarkup "Table of Contents")
 \markuplist \table-of-contents

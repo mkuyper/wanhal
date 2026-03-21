@@ -77,11 +77,24 @@
          #{ \markup { \column { \line \bold { #title } \vspace #0.5 #markup \vspace #2 } } #})
        #f)))
 
-#(define (anno:markup)
+\paper {
+  annoTitleMarkup = \markup \huge \column {
+    \vspace #5
+    \fill-line { \null "Notes" \null }
+    \vspace #1
+  }
+}
+
+#(define (anno:markup layout)
    (let ((m (filter identity (map anno:markup-mov mov:movements))))
      (if (not (null? m))
        (let ((cm (make-column-markup m)))
-         #{ \markup { \column { \vspace #1 \bold \large { "Notes" } \vspace #0.5 #cm } } #})
+         #{
+           \markup { \column {
+             #(ly:output-def-lookup layout 'annoTitleMarkup)
+             #cm
+           }}
+         #})
        (markup))))
 
 #(define (anno:has-annotations)
@@ -89,4 +102,4 @@
 
 #(define (anno:annotations)
    (cons (markup-lambda (layout props) ()
-                        (interpret-markup layout props (anno:markup))) '()))
+                        (interpret-markup layout props (anno:markup layout))) '()))

@@ -22,7 +22,7 @@
    (string->symbol (apply string-append args)))
 
 #(define (score:eval-if-defined sym)
-   (if (defined? sym) (ly:parser-lookup sym)))
+   (if (defined? sym) (ly:parser-lookup sym) #f))
 
 #(define (score:include-if-exists file)
    (if (file-exists? file)
@@ -50,6 +50,9 @@
 #(define (score:call . args)
    (ly:parser-include-string (string-append "\\" (string-join args "-"))))
 
+#(define (score:section movid)
+   (score:eval-if-defined (score:symbol movid "-section")))
+
 #(define (score:part-filtered part)
    (let () (define p (getenv "PART"))
      (if p (if (member part (string-split p #\,)) #t #f) #t)))
@@ -68,6 +71,23 @@
      (filter string? (list name (score:part-transposed-key movid part)))
      " in "))
 
+#(define (score:toc-sec-create movid)
+   (let ((section (score:section movid)))
+     (match section
+            ((l . s) (add-toc-item! 'tocSectionMarkup s l))
+            (_ *unspecified*))))
+
+#(define (score:toc-mov-create movid)
+   (let* ((section (score:section movid))
+          (parent (match section
+                         ((l . s) l)
+                         (l l))))
+     (add-toc-item!
+       'tocItemMarkup
+       (ly:parser-lookup (score:symbol movid "-piece"))
+                   (let ((sym (gensym "toc")))
+                   (if parent (list parent sym) sym)))))
+
 #(define (score:part-staff toc movid partid)
    (let* ((p (parts:get partid))
           (part (parts:part-lid p))
@@ -83,7 +103,8 @@
           \override Staff.InstrumentName.self-alignment-X = #RIGHT
           \new Voice = #part {
             #(if (once:tryuse toc) #{
-              \tocItem \markup { #(score:call movid "piece") }
+              #(score:toc-sec-create movid)
+              #(score:toc-mov-create movid)
             #})
             \set Voice.currentPartId = #partid
             #(score:call movid part)

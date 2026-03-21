@@ -1,5 +1,7 @@
 gloria-piece = "2. Gloria in excelsis Deo"
 
+gloria-section = #'(gloria . "Gloria")
+
 gloria-start-i = {
   \time 4/4
   \tempo "Adagio" 4 = 70

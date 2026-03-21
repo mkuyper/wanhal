@@ -95,7 +95,7 @@
           (siname (parts:part-sname p))
           (miname (parts:part-midi p)))
      (if (score:part-enabled movid part) #{
-        \new Staff \with {
+        \new Staff = #part \with {
           instrumentName = #(score:part-transposed-name movid part iname)
           shortInstrumentName = #siname
           midiInstrument = #miname
@@ -125,7 +125,8 @@
    (let* ((p (parts:get partid))
           (part (parts:part-lid p)))
      (if (score:part-enabled movid part) #{
-       \new FiguredBass {
+       \context Staff = #part {
+         \override Staff.BassFigureAlignmentPositioning.direction = #UP
          #(score:call movid part "fig")
        }
      #})))

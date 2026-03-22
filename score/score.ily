@@ -99,6 +99,7 @@
           instrumentName = #(score:part-transposed-name movid part iname)
           shortInstrumentName = #siname
           midiInstrument = #miname
+          figuredBassPlusDirection = #RIGHT
         } {
           \override Staff.InstrumentName.self-alignment-X = #RIGHT
           \new Voice = #part {

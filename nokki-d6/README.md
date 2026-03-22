@@ -27,6 +27,80 @@ Viole, Violoncello, Organo
 
 **Extent:** 1397 bars (ca. 45 min)
 
+## Transcription Notes
+
+### Observations on the Manuscript
+
+I am doubtful that the title page belongs to this work. *À grand Orchestre*
+would seem more fitting for *Nokki dubious 4*, perhaps it was originally
+attached to that work.
+
+All part books appear to be complete. Movements that do not include a certain
+part are marked *tace[t]* in the respective book.
+
+While several different hands can be observed, all books are prepared on
+similar stock and in the same manner: The margins are lined with pencil, and a
+the outer edges of the pages have been pricked with 12 evenly spaced holes. A
+single-staff rastrum was used to create 12 staves on each page using the
+prick-holes as guides.
+
+Unfortunately, I did not think to check the paper for watermarks at the time of
+my visit to the abbey.
+
+Some movements (Org, Ob II) are marked *O.A.M.D.G* [Omnia ad majorem Dei
+Gloria] at the end, and some (Vl I, Vl II) use a variant, *O.A.M.D.V.Q.G*; the
+meaning of the added letters *V.Q.* is unknown to me.
+
+Most parts with attribution (Org, S, A, T, B, Vlc, Cor I, Cor II) credit *Jean
+Wanhall*, only two (Ob I, Ob II) simply say *Vannhal*. The remaining parts do
+not contain any remark on authorship.
+
+Further, it should be noted that the designation *Oboe* on the two oboe parts
+was added with pencil over an erasure. It's unclear if the previous designation
+(possibly Flauto?) was just a genuine mistake that was corrected.
+
+### Stranger Things
+
+In addition to the problems called out by the CNW, it is necessary to point out
+that the *Benedictus* movement does not end with an *Osanna II* section. There
+is no indication that the *Osanna* from the *Sanctus* should be repeated, nor
+does that seem feasible due to the completely different key, and the fact that
+it is not really a separate part. I am not aware of any mass of that time period
+that does not conclude the *Benedictus* with an *Osanna* of some sort.
+
+### Slurs, Accents, Dynamics, Figured Bass
+
+As usual with manuscript parts from this time period, the markings are not
+always clearly discernible. Unfortunately, they also tend to be incomplete and
+contain mistakes. A best effort has been made to faithfully reproduce what is
+written, but significant editorial work will need to be undertaken to bring the
+markings in the different parts into a consistent form.
+
+### Beaming
+
+Standard rules (as implemented by LilyPond) are used for beaming and grouping.
+
+### Vocal Parts
+
+In deviation of the principles noted above, standard practice for denoting
+melismas using beams and slurs have been employed in the vocal parts. As such,
+there may be differences (mostly added slurs) to what is written in the
+manuscript.
+
+### Corrections
+
+Minor and obvious corrections, such as missing accidentals, have been made
+without remark. Copying errors like duplicated bars or similar have been marked
+in the annotated manuscript, but are transcribed corrected. Missing *Solo* or
+*Tutti* call-outs have been added in square brackets [].
+
+Any other corrections are called out with a ✻ mark and a corresponding end note.
+
+### Current State
+
+As mentioned before, significant editorial work is needed to bring the work
+into a consistent form; none of which has even been started.
+
 ---
 
 ⬜️ Transcription incomplete / not started  

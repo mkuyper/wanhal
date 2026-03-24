@@ -39,10 +39,10 @@ All part books appear to be complete. Movements that do not include a certain
 part are marked *tace[t]* in the respective book.
 
 While several different hands can be observed, all books are prepared on
-similar stock and in the same manner: The margins are lined with pencil, and a
-the outer edges of the pages have been pricked with 12 evenly spaced holes. A
-single-staff rastrum was used to create 12 staves on each page using the
-prick-holes as guides.
+similar stock and in the same manner: The margins are lined with pencil, and
+the outer edges of the pages have been pricked with 12 evenly spaced holes,
+possibly with a runner ("pricking wheel"). A single-staff rastrum was used to
+create 12 staves on each page using the pricked holes as guides.
 
 Unfortunately, I did not think to check the paper for watermarks at the time of
 my visit to the abbey.
@@ -62,11 +62,12 @@ was added with pencil over an erasure. It's unclear if the previous designation
 ### Stranger Things
 
 In addition to the problems called out by the CNW, it is necessary to point out
-that the *Benedictus* movement does not end with an *Osanna II* section. There
-is no indication that the *Osanna* from the *Sanctus* should be repeated, nor
-does that seem feasible due to the completely different key, and the fact that
-it is not really a separate part. I am not aware of any mass of that time period
-that does not conclude the *Benedictus* with an *Osanna* of some sort.
+that the *Benedictus* does not end with an *Osanna II* section. There is no
+indication that the *Osanna* from the *Sanctus* should be repeated, nor does
+that seem feasible due to the completely different key, and the fact that it is
+not really a separate section. I am not aware of any mass of that time period
+that does not conclude the *Benedictus* with an *Osanna*, neither is this
+possibility mentioned by Mac Intyre[^macintyre].
 
 ### Slurs, Accents, Dynamics, Figured Bass
 
@@ -80,26 +81,33 @@ markings in the different parts into a consistent form.
 
 Standard rules (as implemented by LilyPond) are used for beaming and grouping.
 
+### Accidentals
+
+Standard rules for accidentals are used. Cautionary or courtesy accidentals are
+generally not given, unless a slur could introduce an ambiguity.
+
 ### Vocal Parts
 
-In deviation of the principles noted above, standard practice for denoting
-melismas using beams and slurs have been employed in the vocal parts. As such,
-there may be differences (mostly added slurs) to what is written in the
+In deviation of the principles noted above, traditional practice for
+delineating melismas using beams and slurs is employed in the vocal parts. As
+such, there may be differences (mostly added slurs) to what is written in the
 manuscript.
 
 ### Corrections
 
-Minor and obvious corrections, such as missing accidentals, have been made
-without remark. Copying errors like duplicated bars or similar have been marked
-in the annotated manuscript, but are transcribed corrected. Missing *Solo* or
-*Tutti* call-outs have been added in square brackets [].
+Minor and obvious corrections, such as missing or superfluous  accidentals,
+have been made without remark. Copying errors like duplicated bars or similar
+have been marked in the annotated manuscript, but are transcribed corrected
+without further notice. Missing *Solo* or *Tutti* markings have been added in
+square brackets.
 
-Any other corrections are called out with a ✻ mark and a corresponding end note.
+Any other corrections are called out with an asterisk ✻ and a corresponding end
+note.
 
 ### Current State
 
 As mentioned before, significant editorial work is needed to bring the work
-into a consistent form; none of which has even been started.
+into a consistent form; none of which has been started.
 
 ---
 
@@ -235,3 +243,7 @@ _Allegro moderato_: 6/8, G major, 83-247 (165 bars)
 | ------- | -------- | -------- | ------- | --- | --- | ---
 | ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜️
 
+
+
+[^macintyre]: Mac Intyre, Bruce C. 1986. *The Viennese Concerted Mass of the
+    Early Classic Period.* UMI Research Press.

@@ -63,6 +63,10 @@
 #(define (score:part-enabled movid part)
    (and (score:part-exists movid part) (score:part-filtered part)))
 
+#(define (score:part-enabled-any movid . partids)
+   (fold (lambda (partid acc)
+           (or (score:part-enabled movid (parts:part-lid (parts:get partid))) acc)) #f partids))
+
 #(define (score:part-transposed-key movid part)
    (score:eval-if-defined (score:symbol movid "-" part "-key")))
 

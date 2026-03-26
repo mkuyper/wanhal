@@ -20,45 +20,40 @@
     #{
       \set Score.currentMovId = #movid
       {<<
-        \new StaffGroup \with {
-          \consists "Metronome_mark_engraver" \remove "Span_bar_engraver"
-          systemStartDelimiter = #'SystemStartBar
-        } <<
-          \new StaffGroup <<
-            #(score:part-staff toc movid "fl1")
-            #(score:part-staff toc movid "fl2")
-          >>
-          \new StaffGroup <<
-            #(score:part-staff toc movid "cla1")
-            #(score:part-staff toc movid "cla2")
-          >>
-          \new StaffGroup <<
-            #(score:part-staff toc movid "ob1")
-            #(score:part-staff toc movid "ob2")
-          >>
-          \new StaffGroup <<
-            #(score:part-staff toc movid "cor1")
-            #(score:part-staff toc movid "cor2")
-          >>
+        \new StaffGroup <<
+          #(score:part-staff toc movid "fl1")
+          #(score:part-staff toc movid "fl2")
         >>
-        \new StaffGroup \with {
-          \consists "Metronome_mark_engraver" \remove "Span_bar_engraver"
-          systemStartDelimiter = #'SystemStartBar
-        } <<
-          \new StaffGroup <<
-            #(score:part-staff toc movid "tr1")
-            #(score:part-staff toc movid "tr2")
-          >>
-          #(score:part-staff toc movid "tim")
+        \new StaffGroup <<
+          #(score:part-staff toc movid "cla1")
+          #(score:part-staff toc movid "cla2")
         >>
-        \new StaffGroup \with { \consists "Metronome_mark_engraver" } <<
+        \new StaffGroup <<
+          #(score:part-staff toc movid "ob1")
+          #(score:part-staff toc movid "ob2")
+        >>
+        \new StaffGroup <<
+          #(score:part-staff toc movid "cor1")
+          #(score:part-staff toc movid "cor2")
+        >>
+        \new StaffGroup <<
+          #(score:part-staff toc movid "tr1")
+          #(score:part-staff toc movid "tr2")
+        >>
+        #(score:part-staff toc movid "tim")
+        \new StaffGroup \with {
+          \consists "Metronome_mark_engraver"
+          \override MetronomeMark.break-visibility = #(if (score:part-enabled-any movid
+            "fl1" "fl2" "cla1" "cla2" "ob1" "ob2"
+            "cor1" "cor2" "tr1" "tr2" "tim") end-of-line-invisible all-invisible)
+        } <<
           #(score:part-staff toc movid "vl1")
           #(score:part-staff toc movid "vl2")
           #(score:part-staff toc movid "vla")
           #(score:part-staff toc movid "vla2")
           #(score:part-staff toc movid "vlacb")
         >>
-        \new ChoirStaff \with { \consists "Metronome_mark_engraver" } <<
+        \new ChoirStaff <<
           #(score:part-staff toc movid "sop")
           #(score:part-lyrics movid "sop")
   
@@ -71,7 +66,7 @@
           #(score:part-staff toc movid "bas")
           #(score:part-lyrics movid "bas")
         >>
-        \new StaffGroup \with { \consists "Metronome_mark_engraver" } <<
+        \new StaffGroup <<
           #(score:part-staff toc movid "vlc")
           #(score:part-staff toc movid "bvlc")
           #(score:part-staff toc movid "org")

@@ -41,7 +41,6 @@
     short-indent = 1.5\cm
     \context {
       \Score tempoHideNote = ##t
-      \remove Metronome_mark_engraver
     }
   }
 }

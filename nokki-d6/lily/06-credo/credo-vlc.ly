@@ -66,7 +66,7 @@ credo-vlc = \relative c {
   e r r r4 r8
 
   %24
-  r4 r8 b\p cs b
+  r4 r8 b\p b b
 
   %25
   e r r r4 r8

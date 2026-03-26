@@ -175,7 +175,7 @@ _Andantino_: 6/8, A major, 1-53 (53 bars)
 
 | SATB     | Vl I/II | Vla | Vlc | Org
 | -------- | ------- | --- | --- | ---
-| ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜️
+| ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 ### 7. Et incarnatus
 

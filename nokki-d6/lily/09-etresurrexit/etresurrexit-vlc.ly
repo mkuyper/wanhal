@@ -63,7 +63,7 @@ etresurrexit-vlc = \relative c {
   a,4 cs' b e,
 
   %174
-  a cs a e
+  a cs \annot-source "A" b e,
 
   %175
   \trem 2 a8 \trem 2 fs \trem 2 d \trem 2 e
@@ -210,7 +210,7 @@ etresurrexit-vlc = \relative c {
   \rep 6 \trem 4 d
 
   %229
-  e fs a g g fs e d
+  \annot-source "E" d fs a g g fs e d
 
   %230-231
   \rep 2 { g g a g g fs e d }

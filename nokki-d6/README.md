@@ -167,7 +167,7 @@ _Allegro alla capella_: 4/4, D major, 382-467 (86 bars)
 | ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜
 
 
-## Credo
+## ✅ Credo
 
 ### 6. Credo
 
@@ -199,10 +199,10 @@ _Allegro assai_: 4/4, D major, 150-276 (127 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | -------- | ------- | --- | --- | ---
-| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜️
+| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
-## Sanctus
+## ✅ Sanctus
 
 ### 10. Sanctus
 
@@ -214,7 +214,7 @@ _Allegro_: 4/4, D major, 24-73 (50 bars)
 | ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
-## Benedictus
+## ✅ Benedictus
 
 ### 11. Benedictus
 

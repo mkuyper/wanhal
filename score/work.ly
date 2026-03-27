@@ -73,9 +73,16 @@
 
 #(set-global-staff-size 15)
 
-#(for-each (lambda (movdir)
-             (score:toplevel-add (work:mov-score (score:mov-id movdir))))
-           work:movdirs)
+#(let ((first (once:create #t)))
+   (for-each (lambda (movdir)
+               (let* ((movid (score:mov-id movdir))
+                      (title (score:section-title movid)))
+                 (if (not (once:tryuse first)) (score:toplevel-add-pagebreak))
+                 (if title (score:toplevel-add-markup
+                             (markup #:column ( #:larger #:italic #:line ( title )
+                                                #:vspace 1 ) )))
+                 (score:toplevel-add (work:mov-score movid))))
+             work:movdirs))
 
 $(if (anno:has-annotations) #{ \pageBreak #})
 $(if (anno:has-annotations) (add-toc-item! 'tocSpacerMarkup ""))

@@ -35,6 +35,12 @@
    (ly:parser-define! 'toplevel-scores
    (cons score (ly:parser-lookup 'toplevel-scores))))
 
+#(define (score:toplevel-add-pagebreak)
+   (collect-music-aux (lambda (score) (score:toplevel-add score)) #{ \pageBreak #}))
+
+#(define (score:toplevel-add-markup markup)
+   (score:toplevel-add (list markup)))
+
 #(define (score:mov-id movdir)
    (list-ref (last-pair (string-split movdir #\-)) 0))
 
@@ -52,6 +58,9 @@
 
 #(define (score:section movid)
    (score:eval-if-defined (score:symbol movid "-section")))
+
+#(define (score:section-title movid)
+     (match (score:section movid) ((l . s) s) (_ #f)))
 
 #(define (score:part-filtered part)
    (let () (define p (getenv "PART"))

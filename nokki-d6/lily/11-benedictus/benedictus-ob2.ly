@@ -164,8 +164,10 @@ benedictus-ob-ii = \relative c'' {
   %102
   c e32( d) c16-. c-. d d b b
 
-  %103 - EDIT: bar missing in source (c.f. 26)
-  c8 r r4
+  %103
+  \annot-source "Bar missing (c.f. bar 26)" {
+    c8 r r4
+  }
 
   %104-108
   R2*5

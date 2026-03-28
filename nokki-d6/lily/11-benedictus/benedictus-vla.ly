@@ -92,7 +92,9 @@ benedictus-vla = \relative c' {
   c8 c r4
 
   %30
-  \trem 4 d8  % EDIT: source is missing tremolo slash
+  \annot-source-music \relative c' { \clef alto d2 \bar "|" } {
+    \trem 4 d8
+  }
 
   %31
   d d r4

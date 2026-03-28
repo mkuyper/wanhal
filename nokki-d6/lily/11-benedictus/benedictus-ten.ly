@@ -14,7 +14,7 @@ benedictus-ten = \relative c' {
   R2*17
 
   %18
-  r4 r8 g16 e'
+  r4 r8 g16^\solo-ed e'
 
   %19
   d[ c] c4 g16[ f']

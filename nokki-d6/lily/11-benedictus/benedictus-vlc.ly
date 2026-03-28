@@ -240,7 +240,7 @@ benedictus-vlc = \relative c {
   a a' r a
 
   %85
-  gs gs r gs % EDIT: source has G♮
+  gs gs r gs
 
   %86
   a a r4

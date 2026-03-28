@@ -15,7 +15,9 @@ benedictus-vl-i = \relative c'' {
   e( d) d4 g,16( g')
 
   %3
-  f( e) d-. c-.  % EDIT: was g( f) e-. d-.
+  \annot-source-music \relative c ''' { g( f) e-. d-. } {
+    f( e) d-. c-.
+  }
   a( a') g-. b,-.
 
   %4
@@ -49,7 +51,7 @@ benedictus-vl-i = \relative c'' {
   a( g) g4 f16 e
 
   %15
-  d a'( g f) e( g f-. \tbc d-.)
+  d a'( g f) e( g f-. d-.)
 
   %16
   c8 r r b'
@@ -62,7 +64,7 @@ benedictus-vl-i = \relative c'' {
   g,16\p e'
 
   %19
-  d( c) c8 c r % EDIT: source has c on 1
+  \annot-source "C" d( c) c8 c r
 
   %20
   r d d g,16( g')
@@ -279,7 +281,7 @@ benedictus-vl-i = \relative c'' {
   e8 r r4
 
   %93
-  r16 g32\f f e16 e f f e e % EDIT: source has 16 instead of 32 (cf. next bar)
+  r16 g32\f f e16 e f f e e
 
   %94
   d g,32 f e16 e f f e e
@@ -380,7 +382,7 @@ benedictus-vl-i = \relative c'' {
   a( g) g4 f16( e)
 
   %129
-  d( a' g f) e( g) f-. e-.
+  d( a' g f) e( g) f-. \annot-source "E" d-.
 
   %130
   c8 r r b'

@@ -12,20 +12,20 @@ annot = #anno:annotate
 annot-source = #(define-music-function
   (parser location info notes)
   (markup? ly:music?) #{
-    \annot \markup { \line { \vcenter "Source:" \vcenter #info } } { #notes }
+    \annot \markup { \line { "Source:" #info } } { #notes }
   #})
 
 annot-source-music = #(define-music-function
   (parser location src-notes notes)
   (ly:music? ly:music?) #{
-    \annot-source \markup { \score {
+    \annot \markup { \line { \vcenter "Source:" \vcenter \score {
       { #src-notes }
       \layout {
         indent = 0
         #(layout-set-staff-size 9)
         \context { \Staff \omit TimeSignature }
       }
-    }} { #notes }
+    }}} { #notes }
   #})
 
 

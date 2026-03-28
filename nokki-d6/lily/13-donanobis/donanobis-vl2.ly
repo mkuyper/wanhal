@@ -84,7 +84,10 @@ donanobis-vl-ii = \relative c'' {
   g8\p b, b b c( a)
 
   %113
-  g e' d c b a          % EDIT: score has d-c instead of e-d
+  \annot-source-music \relative c' { \key g \major g[ d' c] } {
+    g e' d
+  }
+  c b a
 
   %114
   g b a b a g

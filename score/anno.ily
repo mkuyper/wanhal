@@ -54,7 +54,11 @@
                      (and (string? id) (string=? movid id))))
                  anno:items)
          (lambda (a b)
-           (< (anno:item-barno a) (anno:item-barno b)))))
+           (let ((barno-a (anno:item-barno a))
+                 (barno-b (anno:item-barno b)))
+             (if (= barno-a barno-b)
+               (string<? (anno:item-partid a) (anno:item-partid b))
+               (< barno-a barno-b))))))
 
 #(define (anno:markup-item item)
    (let ((header (format #f "Bar ~a, ~a:"
@@ -62,20 +66,36 @@
                           (parts:part-lname (parts:get (anno:item-partid item)))))
          (info (markup (anno:item-info item))))
      #{ \markup { \column {
+       \vspace #1
        \fill-with-pattern #1 #RIGHT .
          #header
          \italic \page-ref #(anno:item-label-sym item) "000" "?"
        \line { \hspace #3 #info }
-       \vspace #1 } }
+       } }
      #}))
 
-#(define (anno:markup-mov movid)
-   (let ((items (anno:items-by-mov movid)))
-     (if (not (null? items))
-       (let ((title (score:eval-if-defined (score:symbol movid "-piece")))
-             (markup (make-column-markup (map anno:markup-item items))))
-         #{ \markup { \column { \line \bold { #title } \vspace #0.5 #markup \vspace #2 } } #})
-       #f)))
+#(define (anno:prepend title lst)
+   (if (null? lst) lst
+     (cons (markup (make-column-markup (list title (car lst)))) (cdr lst))))
+
+#(define (anno:markups-mov movid)
+   (let* ((items (map anno:markup-item (anno:items-by-mov movid)))
+          (title (score:eval-if-defined (score:symbol movid "-piece")))
+          (titled (anno:prepend
+                    (markup #:column (
+                                      #:vspace 2
+                                      #:bold #:line ( title )
+                                      #:vspace 0.5 ) )
+                    items)))
+     titled))
+
+#(define (anno:markups-all layout)
+   (let* ((movitems (map anno:markups-mov mov:movements))
+          (allitems (fold-right append '() movitems))
+          (titled (anno:prepend
+             (ly:output-def-lookup layout 'annoTitleMarkup)
+             allitems)))
+     titled))
 
 \paper {
   annoTitleMarkup = \markup \huge \column {
@@ -85,21 +105,10 @@
   }
 }
 
-#(define (anno:markup layout)
-   (let ((m (filter identity (map anno:markup-mov mov:movements))))
-     (if (not (null? m))
-       (let ((cm (make-column-markup m)))
-         #{
-           \markup { \column {
-             #(ly:output-def-lookup layout 'annoTitleMarkup)
-             #cm
-           }}
-         #})
-       (markup))))
-
 #(define (anno:has-annotations)
    (not (null? anno:items)))
 
-#(define (anno:annotations)
-   (cons (markup-lambda (layout props) ()
-                        (interpret-markup layout props (anno:markup layout))) '()))
+#(define-markup-list-command
+   (annotations layout props) ()
+   (map (lambda (item) (interpret-markup layout props item))
+        (anno:markups-all layout)))

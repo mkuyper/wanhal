@@ -55,4 +55,4 @@
 }
 
 $(if (anno:has-annotations) #{ \pageBreak #})
-\markup #(anno:annotations)
+\markuplist \annotations

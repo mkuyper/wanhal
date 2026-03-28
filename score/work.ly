@@ -87,7 +87,7 @@
 $(if (anno:has-annotations) #{ \pageBreak #})
 $(if (anno:has-annotations) (add-toc-item! 'tocSpacerMarkup ""))
 $(if (anno:has-annotations) (add-toc-item! 'tocItemMarkup "Notes"))
-\markup #(anno:annotations)
+\markuplist \annotations
 
 \pageBreak
 \markup \vspace #5

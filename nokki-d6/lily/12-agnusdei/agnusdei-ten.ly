@@ -8,6 +8,7 @@ agnusdei-ten = \relative c' {
 
   %1-7
   \agnusdei-start
+  <>^\tutti-ed
   R2*7
 
   %8

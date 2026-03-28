@@ -21,7 +21,10 @@ kyrie-ob-i = \relative c''' {
   r16 a32(\p^\solo b) c16-. c-. c b a( g)
 
   %12
-  fs a32( b) c16-. c-. c b a( g) % EDIT: source does not have leading f♯
+  \annot-source \markup {
+    "Instruction" \script "rep" "to repeat previous bar;"
+    "add missing first note (F♯) in place of rest"
+  } fs a32( b) c16-. c-. c b a( g)
 
   %13
   fs8 fs fs r
@@ -265,8 +268,13 @@ kyrie-ob-i = \relative c''' {
   %158
   a( fs b a) g( e a g)
 
-  %159 EDIT: source says ident with 161 but clearly wrong; see Vl 1.
-  fs( a b a) d( cs b a)
+  %159
+  \annot-source \markup {
+    "Instruction" \script "rep" "indicating this bar should be identical to bar 161;"
+    "likely incorrect, double Violino I instead"
+  } {
+    fs( a b a) d( cs b a)
+  }
 
   %160
   a( fs b a) g( e a g)

@@ -154,7 +154,7 @@ kyrie-vl-i = \relative c' {
   b b( cs) cs d a( g fs)
 
   %50
-  fs8 e a32(\f gs a gs) a fs( e d) % EDIT: source has g♮
+  fs8 e a32(\f gs a gs) a fs( e d)
 
   %51
   a'8 a, r4
@@ -222,8 +222,13 @@ kyrie-vl-i = \relative c' {
   %71
   d( b e d) d( c b c)
 
-  %72 - EDIT: double Ob 1
-  b( c d e) g( f e d)
+  %72
+  \annot-source \markup {
+    "Instruction" \script "bis" "to repeat bar 70;"
+    "likely incorrect, double Oboe I instead"
+  } {
+    b( c d e) g( f e d)
+  }
 
   %73
   e8 c'16 c~ c b b( a)
@@ -313,7 +318,7 @@ kyrie-vl-i = \relative c' {
   c( b) b( a') a( g) g( f)
 
   %102
-  f32( e d c) % EDIT: source has 16
+  f32( e d c)
   c8 r16 e' e c
 
   %103
@@ -605,7 +610,7 @@ kyrie-vl-i = \relative c' {
   g( fs) fs-. e'-. e( d) d( c)
 
   %193
-  c32( b a g) %EDIT: source has 16
+  c32( b a g)
   g8 r16 g' g g
 
   %194

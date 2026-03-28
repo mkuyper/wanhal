@@ -445,7 +445,7 @@ kyrie-alt = \relative c' {
   R2*2
 
   %173
-  % EDIT: source has a tutti marking here
+  \annot-source \markup { "Spurious marking" \script "T." "[Tutti]" }
   a8.[ b16] c8 c16[ b]
 
   %174

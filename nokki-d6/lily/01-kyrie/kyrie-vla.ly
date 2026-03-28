@@ -165,7 +165,7 @@ kyrie-vla = \relative c {
   d( e fs d)
 
   %59
-  cs8\f r16 cs d8 r16 d % EDIT: source has C♮
+  cs8\f r16 cs d8 r16 d
 
   %60
   b\p b( a) a g g( fs) fs

@@ -145,7 +145,9 @@ kyrie-ob-ii = \relative c'' {
   c16( b c d) e( c d e)
 
   %87
-  d8( c4) r8 % EDIT: source has 4-8
+  \annot-source-music \relative c'' { \key g \major d4( c8) r \bar "|" } {
+    d8( c4) r8
+  }
 
   %88-90
   R2*3
@@ -154,7 +156,7 @@ kyrie-ob-ii = \relative c'' {
   r16 e\p e e e( c f e)
 
   %92
-  e a( g f) e d c d % EDIT: source has f♯
+  e a( g f) e d c d
 
   %93
   c8 r r4

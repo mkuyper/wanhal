@@ -37,7 +37,7 @@ kyrie-ten = \relative c' {
   e[ d] d d
 
   %22
-  e[( d c b] % EDIT: source has a instead of b
+  e[( d c \annot-source "A" b]
 
   %23
   c[ d]~ d4)

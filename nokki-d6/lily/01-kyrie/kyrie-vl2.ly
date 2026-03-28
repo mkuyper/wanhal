@@ -230,8 +230,13 @@ kyrie-vl-ii = \relative c' {
   %71
   b g( c b) b a( g a)
 
-  %72 - EDIT: double Ob 2
-  g a( b c) e d( c b)
+  %72
+  \annot-source \markup {
+    "Instruction" \script "bis" "to repeat bar 70;"
+    "likely incorrect, double Oboe II instead"
+  } {
+    g a( b c) e d( c b)
+  }
 
   %73
   c8 g'16 g f f e e
@@ -419,7 +424,7 @@ kyrie-vl-ii = \relative c' {
   << \trem 4 b8 \trem 4 d, >>
 
   %136
-  e'32 e( ds e) c'8-. % EDIT: d♮ in source
+  e'32 e( ds e) c'8-.
   d,32 d( cs d) b'8-.
 
   %137

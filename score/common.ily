@@ -41,6 +41,12 @@ ann-ed = #(define-scheme-function
     \markup { \bracket \small \italic { #info } }
   #})
 
+script = #(define-scheme-function
+  (parser location info)
+  (markup?) #{
+    \markup { \override #'(font-name . "TeX Gyre Chorus") { \larger #info } }
+  #})
+
 
 solo = \ann \markup { "Solo" }
 solo-ed = \ann-ed \markup { "Solo" }

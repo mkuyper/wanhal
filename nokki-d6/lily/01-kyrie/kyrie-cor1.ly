@@ -75,7 +75,7 @@ kyrie-cor-i = \relative c'' {
   r4 d
 
   %52
-  g8 r r4 % EDIT: source has f (sounding c)
+  \annot-source "F (sounding C)" g8 r r4
 
   %53-56
   R2*4
@@ -174,7 +174,7 @@ kyrie-cor-i = \relative c'' {
   R2*9
 
   %166-168
-  g2~ g g8 r r4 % EDIT: source has f (souning c) on last 8
+  g2~ g \annot-source "F (sounding C)" g8 r r4
 
   %169-171
   R2*3

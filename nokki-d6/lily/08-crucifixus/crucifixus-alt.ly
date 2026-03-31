@@ -73,8 +73,8 @@ crucifixus-alt = \relative c' {
   %22
   g g
 
-  %23 EDIT: f statt ff
-  g f
+  %23
+  g \annot-source "F♭, probably meant as courtesy accidental to cancel previous F♯" f
 
   %24
   e4 g( a g)

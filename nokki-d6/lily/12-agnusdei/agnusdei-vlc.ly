@@ -193,7 +193,7 @@ agnusdei-vlc = \relative c' {
   a r a r
 
   %63
-  bf16\f c32 d ef f g bf bf16 bf bf bf
+  bf16\f c32 d ef f g \annot-source "B♭" a bf16 bf bf bf
 
   %64
   fs8 g r4

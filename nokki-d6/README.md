@@ -225,7 +225,7 @@ _Andante_: 2/4, C major, 1-132 (132 bars)
 | ✅✅    | ✅✅     | ✅ | ✅✅    | ✅  | ✅
 
 
-## Agnus Dei
+## ✅ Agnus Dei
 
 ### 12. Agnus Dei
 
@@ -241,7 +241,7 @@ _Allegro moderato_: 6/8, G major, 83-247 (165 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | -------- | ------- | --- | --- | ---
-| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜️
+| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
 

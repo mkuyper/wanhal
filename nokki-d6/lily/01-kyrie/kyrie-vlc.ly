@@ -54,7 +54,7 @@ kyrie-vlc = \relative c' {
   \rep 3 \trem 4 g,
 
   %21
-  a8.\f g16 g8. g16
+  a8.\f \annot-source "G" a16 g8. g16
 
   %22
   c,8\p d e d
@@ -239,7 +239,7 @@ kyrie-vlc = \relative c' {
   g r r d
 
   %82
-  g r r d
+  g r d r
 
   %83
   g r r4

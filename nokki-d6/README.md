@@ -155,7 +155,7 @@ _Allegro moderato_: 3/4, C major, 225-376 (152 bars)
 
 | Ob I/II | Cor I/II | B   | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | --- | ------- | --- | --- | ---
-| ✅✅    | ✅✅     | ✅  | ✅✅    | ✅  | ✅  | ⬜
+| ✅✅    | ✅✅     | ✅  | ✅✅    | ✅  | ✅  | ✅
 
 ### 5. Cum Sancto
 

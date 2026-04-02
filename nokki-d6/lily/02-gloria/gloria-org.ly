@@ -257,7 +257,8 @@ gloria-org = \relative c {
   d, r \trem 2 d8 \trem 2 e
 
   %91
-  d4 r \trem 2 d8 \trem 2 e
+  \annot-source "Tremolo slash missing; match Violoncello" { \trem 2 d }
+  r4 \trem 2 d8 \trem 2 e
 
   %92
   \rep 2 { \trem 2 d \trem 2 e }

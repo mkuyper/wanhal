@@ -238,8 +238,8 @@ gloria-vlc = \relative c {
   %86
   \rep 2 \trem 4 g
 
-  %87 EDIT: tremolo added on lower a (cf. org)
-  \trem 4 a \trem 4 a,
+  %87
+  \trem 4 a \annot-source "Tremolo slash missing; match Organo" { \trem 4 a, }
 
   %88
   d4 r r a'\p

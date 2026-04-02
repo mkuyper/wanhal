@@ -159,7 +159,7 @@ quoniam-vlc = \relative c {
   g4 r8 g d' fs
 
   %281-282
-  \rep 2 { g g, r g d' gs }
+  \rep 2 { g g, r g d' fs }
 
   %283
   g4 g, r

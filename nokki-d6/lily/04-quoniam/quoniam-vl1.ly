@@ -173,7 +173,7 @@ quoniam-vl-i = \relative c'' {
   %287
   g4\f r8 g g g
 
-  %288 EDIT: 1. 4el punktiert
+  %288
   a4. c,8 c c
 
   %289
@@ -296,8 +296,8 @@ quoniam-vl-i = \relative c'' {
   %331
   c( b) r b b b
 
-  %332 EDIT: 2. 1/8: c statt a
-  d( c) r g g g
+  %332
+  d( \annot-source "A" c) r g g g
 
   %333
   f f d'( f, e c')

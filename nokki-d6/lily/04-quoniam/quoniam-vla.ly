@@ -4,7 +4,7 @@ quoniam-vla = \relative c' {
   \clef alto
   \key c \major
 
-  %225 EDIT: 16el statt 32el
+  %225
   \quoniam-start
   \rep 3 { c16 d e d }
 
@@ -260,7 +260,7 @@ quoniam-vla = \relative c' {
   %320-323
   e,2.~ e~ e~ e~
 
-  %324 EDIT: 4. statt 4
+  %324
   e4. c8( b c)
 
   %325

@@ -115,7 +115,7 @@ into a consistent form; none of which has been started.
 ✅ Transcription completed
 
 
-## Kyrie
+## ✅ Kyrie
 
 ### 1. Kyrie
 
@@ -123,7 +123,7 @@ _Andante_: 2/4, G major, 1-202 (202 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | -------- | ------- | --- | --- | ---
-| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜️
+| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
 ## Gloria

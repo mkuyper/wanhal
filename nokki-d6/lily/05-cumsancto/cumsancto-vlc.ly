@@ -25,7 +25,7 @@ cumsancto-vlc = \relative c {
   d8 e fs g a e a4~
 
   %383
-  a g g8 fs16 e d4
+  a g g8 fs16 e fs4
 
   %384
   gs8 fs16 e a2 gs4

@@ -126,7 +126,7 @@ _Andante_: 2/4, G major, 1-202 (202 bars)
 | ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
-## Gloria
+## ✅ Gloria
 
 ### 2. Gloria
 
@@ -164,7 +164,7 @@ _Allegro alla capella_: 4/4, D major, 382-467 (86 bars)
 
 | Ob I/II | Cor I/II | SATB     | Vl I/II | Vla | Vlc | Org
 | ------- | -------- | -------- | ------- | --- | --- | ---
-| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ⬜
+| ✅✅    | ✅✅     | ✅✅✅✅ | ✅✅    | ✅  | ✅  | ✅
 
 
 ## ✅ Credo

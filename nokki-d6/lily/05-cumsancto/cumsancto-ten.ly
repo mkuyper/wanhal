@@ -163,16 +163,16 @@ cumsancto-ten = \relative c' {
   b4 r b8\melisma cs ds b
 
   %437
-  cs4 fs b, e
+  cs4 fs b, e~
 
-  %438 EDIT: 1. 1/4: e statt d
-  e d b a\melismaEnd
+  %438
+  \annot-source "D" e d b a\melismaEnd
 
   %439
   a r a8\melisma b cs a
 
   %440
-  g4 e'2 d4
+  g4 e'2 d4~
 
   %441
   d2\melismaEnd cs4 r

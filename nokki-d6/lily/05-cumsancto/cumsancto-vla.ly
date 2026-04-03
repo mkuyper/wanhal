@@ -17,8 +17,12 @@ cumsancto-vla = \relative c'' {
   %380
   a,4\p r r2
 
-  %381 EDIT: 3. 1/4el fehlt
-  << { e'8 e e e e4 } \\ { cs8 cs cs cs cs4 } >> r\fermata
+  %381
+  << { e'8 e e e } \\ { cs cs cs cs } >>
+  \annot-source "Note missing" {
+    << e4 \\ cs >>
+  }
+  r\fermata
 
   %382
   \amen-start

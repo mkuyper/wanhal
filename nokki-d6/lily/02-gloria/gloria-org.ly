@@ -4,9 +4,6 @@ gloria-org = \relative c {
   \clef bass
   \key d \major
 
-  \override Score.BarNumber.break-visibility = ##(#t #t #t)
-  \compressEmptyMeasures
-
   %1
   \gloria-start-i
   a8\p r a r d r d r

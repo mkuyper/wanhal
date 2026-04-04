@@ -30,7 +30,7 @@ $(MOV).mp3: $(MOV).wav
 	lame $< $@
 
 $(MOV)-roll.pdf: $(SCOREDIR)/movement-roll.ly $(SRCS)
-	$(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
+	SCORE_TOPDIR=.. $(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
 
 $(MOV)-roll.png: $(MOV)-roll.pdf
 	convert -density 300 $< -flatten -resize x1080 $@

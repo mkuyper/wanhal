@@ -1,17 +1,15 @@
 \version "2.24.4"
 
-#(define score:topdir "..")
+\include "score.ily"
 
-\include "build.ily"
 \include "common.ily"
-\include "movement.ily"
 
 \include "../project.ily"
 
 #(define movement:dir (basename (getcwd)))
 #(define movement:id (score:mov-id movement:dir))
 
-#(movement:include movement:dir)
+#(mov:include movement:dir)
 
 \paper {
   left-margin = 4\cm
@@ -24,7 +22,8 @@
 }
 
 \score {
-  \movementMusic #movement:id ##f
+  #(mov:music movement:id #f)
+
   \layout {
     \context {
       \Score {

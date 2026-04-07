@@ -109,6 +109,10 @@ note.
 As mentioned before, significant editorial work is needed to bring the work
 into a consistent form; none of which has been started.
 
+### Latest PDF Score
+
+:page_with_curl: [nokki-d6.pdf](https://mkuyper.github.io/wanhal/nokki-d6.pdf)
+
 ---
 
 ⬜️ Transcription incomplete / not started  

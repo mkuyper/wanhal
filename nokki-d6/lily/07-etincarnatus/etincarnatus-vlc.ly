@@ -144,7 +144,7 @@ etincarnatus-vlc = \relative c {
   \rep 2 \trem 4 e8
 
   %104
-  e16( a gs fs) e( a gs fs) % TODO -- verify
+  e16( a gs fs) e( a gs fs)
 
   %105
   \trem 4 e8\f

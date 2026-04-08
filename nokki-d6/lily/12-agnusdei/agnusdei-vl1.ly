@@ -47,18 +47,29 @@ agnusdei-vl-i = \relative c' {
   %14
   a8 r r4
 
-  %15-18
-  \rep 2 { % TODO -- expand to avoid repeating \p "piano"
-    d,32(\p f) bf-. d-.
-    c-. bf( a bf)
-    d,32( f) bf-. d-.
-    c-. bf( a bf)
+  %15
+  d,32(\p f) bf-. d-.
+  c-. bf( a bf)
+  d,32( f) bf-. d-.
+  c-. bf( a bf)
 
-    a( c) c-. c-.
-    c( ef) ef-. ef-.
-    ef( d c) bf-.
-    a( g f) ef-.
-  }
+  %16
+  a( c) c-. c-.
+  c( ef) ef-. ef-.
+  ef( d c) bf-.
+  a( g f) ef-.
+
+  %17
+  d32( f) bf-. d-.
+  c-. bf( a bf)
+  d,32( f) bf-. d-.
+  c-. bf( a bf)
+
+  %18
+  a( c) c-. c-.
+  c( ef) ef-. ef-.
+  ef( d c) bf-.
+  a( g f) ef-.
 
   %19
   d16 bf''8 bf bf bf16~
@@ -182,18 +193,29 @@ agnusdei-vl-i = \relative c' {
   %58
   a8 r r4
 
-  %59-62
-  \rep 2 { % TODO -- expand to avoid repeating \p "piano"
-    d,32(\p f bf) d-.
-    c-. bf( a bf)
-    d,32( f bf) d-.
-    c bf a bf
+  %59
+  d,32(\p f bf) d-.
+  c-. bf( a bf)
+  d,32( f bf) d-.
+  c bf a bf
 
-    a( c) c-. c-.
-    c( ef) ef-. ef-.
-    ef( d) c-. bf-.
-    a( g) f-. ef-.
-  }
+  %60
+  a( c) c-. c-.
+  c( ef) ef-. ef-.
+  ef( d) c-. bf-.
+  a( g) f-. ef-.
+
+  %61
+  d32( f bf) d-.
+  c-. bf( a bf)
+  d,32( f bf) d-.
+  c bf a bf
+
+  %62
+  a( c) c-. c-.
+  c( ef) ef-. ef-.
+  ef( d) c-. bf-.
+  a( g) f-. ef-.
 
   %63
   bf16\f bf''8 bf bf bf16

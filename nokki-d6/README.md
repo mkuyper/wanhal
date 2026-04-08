@@ -16,7 +16,7 @@ Notes from _Catalogus novus Wanhali_:
 > masses (Andantino) or seem unusual for their context (Andante for the
 > _Kyrie_), and no other work sets the _Crucifixus_ as a separate movement. The
 > continuo section being tacet in the _Gratias_ and _Et incarnatus_ is also
-> highly suspect.  Note that each section of the mass seems to be set in
+> highly suspect. Note that each section of the mass seems to be set in
 > different tonalities, and that the Credo does not end with the same tonality
 > as it began. As with Nokki dubious 4, this might be a mixing of music from
 > different sources, where one or more movements are by Wanhal, but it has not
@@ -71,20 +71,17 @@ possibility mentioned by Mac Intyre[^macintyre].
 
 ### Slurs, Accents, Dynamics, Figured Bass
 
-As usual with manuscript parts from this time period, the markings are not
-always clearly discernible. Unfortunately, they also tend to be incomplete and
-contain mistakes. A best effort has been made to faithfully reproduce what is
-written, but significant editorial work will need to be undertaken to bring the
-markings in the different parts into a consistent form.
+As usual with manuscript parts from this time period, the markings or their
+intent are not always clearly discernible. Unfortunately, they also tend to be
+incomplete and contain mistakes. A best effort has been made to faithfully
+reproduce what is written, but significant editorial work will need to be
+undertaken to bring the markings in the different parts into a consistent and
+meaningful form.
 
 ### Beaming
 
-Standard rules (as implemented by LilyPond) are used for beaming and grouping.
-
-### Accidentals
-
-Standard rules for accidentals are used. Cautionary or courtesy accidentals are
-generally not given, unless a slur could introduce an ambiguity.
+Standard rules (as implemented by LilyPond's automatic beaming feature) are
+generally used for beaming and grouping.
 
 ### Vocal Parts
 
@@ -93,9 +90,14 @@ delineating melismas using beams and slurs is employed in the vocal parts. As
 such, there may be differences (mostly added slurs) to what is written in the
 manuscript.
 
+### Accidentals
+
+Standard rules for accidentals are used. Cautionary or courtesy accidentals are
+generally not given, unless a slur could introduce an ambiguity.
+
 ### Corrections
 
-Minor and obvious corrections, such as missing or superfluous  accidentals,
+Minor and obvious corrections, such as missing or superfluous accidentals,
 have been made without remark. Copying errors like duplicated bars or similar
 have been marked in the annotated manuscript, but are transcribed corrected
 without further notice. Missing *Solo* or *Tutti* markings have been added in
@@ -106,8 +108,11 @@ note.
 
 ### Current State
 
-As mentioned before, significant editorial work is needed to bring the work
-into a consistent form; none of which has been started.
+The raw transcription of all available parts for this mass is **complete**.
+:tada:
+
+As mentioned before, significant editorial work is still needed to bring the
+work into a consistent form; this has not been started.
 
 ### Latest PDF Score
 

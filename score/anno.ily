@@ -14,11 +14,11 @@
 #(define (anno:next)
    (if (pair? anno:items) (+ 1 (anno:item-number (car anno:items))) 0))
 
-#(define (anno:item-label item)
-   (string-append "_anno_" (number->string (anno:item-number item))))
+#(define (anno:item-label-fwd item)
+   (string->symbol (string-append "_anno_f_" (number->string (anno:item-number item)))))
 
-#(define (anno:item-label-sym item)
-   (string->symbol (anno:item-label item)))
+#(define (anno:item-label-bwd item)
+   (string->symbol (string-append "_anno_b_" (number->string (anno:item-number item)))))
 
 #(define (anno:create info)
    (let* ((n (anno:next))
@@ -31,10 +31,11 @@
      (parser location info music)
      (markup? ly:music?)
      (let* ((item (anno:create info))
-            (label (anno:item-label item)))
+            (flbl (anno:item-label-fwd item))
+            (blbl (anno:item-label-bwd item)))
        #{
-         <>^\markup { "*" }
-         \label #(string->symbol label)
+         <>^#(markup #:line (#:with-link '_anno_top "*"))
+         \label #blbl
          \applyContext #(lambda (ctx)
             (anno:set-item-movid! item (ly:context-property ctx 'currentMovId))
             (anno:set-item-partid! item (ly:context-property ctx 'currentPartId))
@@ -64,15 +65,18 @@
    (let ((header (format #f "Bar ~a, ~a:"
                           (anno:item-barno item)
                           (parts:part-lname (parts:get (anno:item-partid item)))))
-         (info (markup (anno:item-info item))))
-     #{ \markup { \column {
-       \vspace #1
-       \fill-with-pattern #1 #RIGHT .
-         #header
-         \italic \page-ref #(anno:item-label-sym item) "000" "?"
-       \line { \hspace #3 #info }
-       } }
-     #}))
+         (info (markup (anno:item-info item)))
+         (flbl (anno:item-label-fwd item))
+         (blbl (anno:item-label-bwd item)))
+     (markup #:line
+             (#:column
+              (#:vspace 1
+               (#:with-link blbl
+                #:fill-with-pattern 1 RIGHT "."
+                header
+                (#:page-ref blbl "XXX" "?"))
+               #:line
+               (#:hspace 3 info))))))
 
 #(define (anno:prepend title lst)
    (if (null? lst) lst

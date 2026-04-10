@@ -87,6 +87,7 @@
 $(if (anno:has-annotations) #{ \pageBreak #})
 $(if (anno:has-annotations) (add-toc-item! 'tocSpacerMarkup ""))
 $(if (anno:has-annotations) (add-toc-item! 'tocItemMarkup "Notes"))
+$(if (anno:has-annotations) #{ \label #'_anno_top #})
 \markuplist \annotations
 
 \pageBreak

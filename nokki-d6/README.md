@@ -108,8 +108,7 @@ note.
 
 ### Current State
 
-The raw transcription of all available parts for this mass is **complete**.
-:tada:
+The raw transcription of all available parts for this mass is **complete**. 🎉
 
 As mentioned before, significant editorial work is still needed to bring the
 work into a consistent form; this has not been started.

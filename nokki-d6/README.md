@@ -237,7 +237,7 @@ _Andante_: 2/4, C major, 1-132 (132 bars)
 
 ### 12. Agnus Dei
 
-_Adagio_: 2/4, G minor, 1-81 (82 bars)
+_Adagio_: 2/4, G minor, 1-82 (82 bars)
 
 | SATB     | Vl I/II | Vla | Vlc | Org
 | -------- | ------- | --- | --- | ---

@@ -71,6 +71,13 @@ annot = #anno:annotate-void
 
 #(mov:include)
 
+%% Check if a part exists in this work
+%#(define (allparts:has-part part)
+%   (let ((part-lid (parts:part-lid part)))
+%     (any (lambda (movdir)
+%              (score:part-enabled (score:mov-id movdir) part-lid))
+%            allparts:movdirs)))
+
 
 \paper {
   bookpart-level-page-numbering = ##t
@@ -81,7 +88,7 @@ annot = #anno:annotate-void
         \if \on-first-page-of-part \fromproperty #'header:copyright
       }
       \fill-line {
-        %% Tagline header field only on last page in the book.
+        %% Tagline header field only on last page in each bookpart.
         \if \on-last-page-of-part \fromproperty #'header:tagline
       }
     }
@@ -90,39 +97,12 @@ annot = #anno:annotate-void
 
 \header {
   title = \workTitle
-
   composer = \workComposer
-
-  arranger = \markup {
-    \vspace #2
-    \box {
-      \override #'(baseline-skip . 2.5)
-      \pad-markup #0.5 \sans \fontsize #-2 \left-column {
-        \line {
-          \vcenter \pad-markup #1 { \epsfile #X #3.5 #(score:asset "invertocat.eps") }
-          \vcenter \left-column {
-            "This project is hosted on GitHub:"
-            \with-url #"https://github.com/mkuyper/wanhal" {
-              "github.com/mkuyper/wanhal"
-            }
-          }
-        }
-        \vspace #0.2
-        \buildTag
-        \concat { \buildDate "/" \buildUser }
-      }
-    }
-  }
-
+  arranger = #(build:github-box "mkuyper/wanhal")
   copyright = \copyright-cc-by
 }
 
-#(define (allparts:has-part part)
-   (let ((part-lid (parts:part-lid part)))
-     (any (lambda (movdir)
-              (score:part-enabled (score:mov-id movdir) part-lid))
-            allparts:movdirs)))
-
-#(parts:for-each (lambda (p)
-                   (if (allparts:has-part p)
-                     (toplevel-bookpart-handler (allparts:all-scores-bookpart p)))))
+#(let ((parts (string-split (getenv "ALLPARTS") #\,)))
+   (for-each (lambda (part-id)
+               (toplevel-bookpart-handler (allparts:all-scores-bookpart (parts:get part-id))))
+             parts))

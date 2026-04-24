@@ -15,11 +15,15 @@
 #(define (once:create init) (cons init 'null))
 
 #(define (once:tryuse once)
-   (let () (define v (car once)) (if v (set-car! once #f)) v))
+   (if once (let ((v (car once))) (if v (set-car! once #f)) v) #f))
 
 
 #(define (score:symbol . args)
    (string->symbol (apply string-append args)))
+
+#(define (score:symbol-if-defined . args)
+   (let ((sym (apply score:symbol args)))
+     (if (defined? sym) sym #f)))
 
 #(define (score:eval-if-defined sym)
    (if (defined? sym) (ly:parser-lookup sym) #f))
@@ -55,6 +59,9 @@
 
 #(define (score:call . args)
    (ly:parser-include-string (string-append "\\" (string-join args "-"))))
+
+#(define (score:call-sym sym)
+   (ly:parser-include-string (string-append "\\" (symbol->string sym))))
 
 #(define (score:section movid)
    (score:eval-if-defined (score:symbol movid "-section")))
@@ -144,3 +151,52 @@
          #(score:call movid part "fig")
        }
      #})))
+
+
+#(define* (score:part-staff-new-complete movid partid #:key compress iname siname use-toc)
+   (let* ((p (parts:get partid))
+          (part (parts:part-lid p))
+          (iname (if (eq? iname #t)
+                   (score:part-transposed-name movid part (parts:part-lname p))
+                   iname))
+          (siname (if (eq? siname #t) (parts:part-sname p) siname))
+          (figs (score:symbol-if-defined movid "-" part "-fig"))
+          (words (score:symbol-if-defined movid "-" part "-words")))
+     (if (score:part-enabled movid part) #{ { <<
+       #(if compress #{
+         \compressEmptyMeasures
+       #})
+
+       \new Staff = #part {
+         #(if iname #{
+            \set Staff.instrumentName = #iname
+         #})
+         #(if siname #{
+            \set Staff.shortInstrumentName = #siname
+         #})
+         \set Staff.midiInstrument = #(parts:part-midi p)
+         \set Staff.figuredBassPlusDirection = #RIGHT
+         \override Staff.InstrumentName.self-alignment-X = #RIGHT
+         \new Voice = #part {
+           #(if (once:tryuse use-toc) #{
+             #(score:toc-sec-create movid)
+             #(score:toc-mov-create movid)
+           #})
+           \set Voice.currentPartId = #partid
+           #(score:call movid part)
+         }
+       }
+
+       #(if figs #{
+          \context Staff = #part {
+            \override Staff.BassFigureAlignmentPositioning.direction = #UP
+            #(score:call-sym figs)
+          }
+       #})
+
+       #(if words #{
+          \new Lyrics \lyricsto #part {
+            #(score:call-sym words)
+          }
+       #})
+       >> } #})))

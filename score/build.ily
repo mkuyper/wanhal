@@ -11,3 +11,25 @@
 buildDate = #(strftime "%d-%b-%Y" (localtime (current-time)))
 buildUser = #(or (getenv "BUILD_USER") (passwd:name (getpw (getuid))))
 buildTag = #(or (getenv "BUILD_TAG") (string-append (build:git-revision) (build:git-dirty)))
+
+#(define (build:github-box repo) #{
+  \markup {
+    \vspace #2
+    \box {
+      \override #'(baseline-skip . 2.5)
+      \pad-markup #0.5 \sans \fontsize #-2 \left-column {
+        \line {
+          \vcenter \pad-markup #1 { \epsfile #X #3.5 #(score:asset "invertocat.eps") }
+          \vcenter \left-column {
+            "This project is hosted on GitHub:"
+            \with-url #(string-append "https://github.com/" repo) {
+              #(string-append "github.com/" repo)
+            }
+          }
+        }
+        \vspace #0.2
+        \buildTag
+        \concat { \buildDate "/" \buildUser }
+      }
+    }
+  } #})

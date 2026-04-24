@@ -11,7 +11,10 @@ LILYOPTS += -dno-point-and-click
 
 default: $(WORK).pdf
 
-%.pdf: $(SCOREDIR)/work.ly $(SRCS)
+$(WORK).pdf: $(SCOREDIR)/work.ly $(SRCS)
+	$(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
+
+$(WORK)-parts.pdf: $(SCOREDIR)/allparts.ly $(SRCS)
 	$(LILYPOND) $(LILYOPTS) -o $(basename $@) $<
 
 clean:

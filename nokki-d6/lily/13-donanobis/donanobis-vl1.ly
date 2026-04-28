@@ -6,7 +6,7 @@ donanobis-vl-i = \relative c'' {
 
   %83
   \donanobis-start
-  d8\p d d d( e) d-.
+  d8\p d d d( e) c-.
 
   %84
   b( c) a-. g-. d-. g,-.

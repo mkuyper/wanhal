@@ -53,11 +53,14 @@ solo-ed = \ann-ed \markup { "Solo" }
 tutti = \ann \markup { "Tutti" }
 tutti-ed = \ann-ed \markup { "Tutti" }
 
+dolce = \ann \markup { "dolce" }
+
 tbc = #(define-music-function
   (parser location note)
   (ly:music?) #{
     \staffHighlight "lightpink"
-    { #note }^\markup { \center-align { "[?]" } }
+    <>^\markup { "[tbc]" }
+    { #note }
     \stopStaffHighlight
   #})
 

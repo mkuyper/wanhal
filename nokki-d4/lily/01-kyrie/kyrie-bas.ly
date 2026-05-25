@@ -5,9 +5,6 @@ kyrie-bas = \relative c {
   \key f \major
   \vocal
 
-  \override Score.BarNumber.break-visibility = ##(#t #t #t)
-  \compressEmptyMeasures
-
   %1-31
   \kyrie-start
   R1*31

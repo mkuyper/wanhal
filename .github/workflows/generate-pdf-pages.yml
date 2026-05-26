@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: codello/lilypond:stable
+    container: codello/lilypond:2.24
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
